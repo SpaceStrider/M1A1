@@ -1,0 +1,9 @@
+MatPBRMulti : "{0297528F2283D0F3}Assets/Vehicles/Tracked/M1A1/data/Clearcoat.emat" {
+ MaskSharpness_3 1
+ MaskOffset_3 0.023
+ MaskUVScale_3 1
+ Metalness_3 4
+ Color_2 0.658 0.452 0.307 1
+ MaskOffset_2 0.3
+ Color_1 0.06 0.053 0.04 1
+}

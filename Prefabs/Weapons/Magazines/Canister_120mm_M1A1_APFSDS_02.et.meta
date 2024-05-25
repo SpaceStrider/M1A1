@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{FACE6934D2A9A930}Prefabs/Weapons/Magazines/Canister_120mm_M1A1_APFSDS_02.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

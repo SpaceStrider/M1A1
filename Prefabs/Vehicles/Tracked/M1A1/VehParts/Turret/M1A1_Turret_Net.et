@@ -1,0 +1,16 @@
+Turret : "{C06BC8C9F56F0AA1}Prefabs/Vehicles/Tracked/M1A1/VehParts/Turret/M1A1_Turret.et" {
+ ID "51ACD0965653D003"
+ components {
+  SlotManagerComponent "{5E182107FF135160}" {
+   Slots {
+    EntitySlotInfo Camo {
+     Prefab "{0D97F8BC23D20BFC}Prefabs/Vehicles/Tracked/M1A1/VehParts/M1A1_Camonet_Turret_01.et"
+     InheritParentSkeleton 1
+    }
+   }
+  }
+  WeaponSlotComponent "{51ACD09C6BFEEE6A}" {
+   WeaponTemplate "{2EDC92E303FE3FF7}Prefabs/Weapons/HeavyWeapons/Cannon_M1A1_Net.et"
+  }
+ }
+}

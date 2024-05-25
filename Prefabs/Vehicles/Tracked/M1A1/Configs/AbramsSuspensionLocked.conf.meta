@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{3072E59BE51FD129}Prefabs/Vehicles/Tracked/BMP3/AbramsSuspensionLocked.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

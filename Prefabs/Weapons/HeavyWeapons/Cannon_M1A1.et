@@ -1,0 +1,175 @@
+GenericEntity : "{F54F6C453A8CB478}Prefabs/Weapons/Core/MachineGun_Base.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  WeaponSoundComponent "{5A8685198A9AEEDD}" {
+   Filenames {
+    "{EEC626B3150013D0}Sounds/Weapons/HeavyWeapons/120mm Smoothbore/Weapons_HeavyWeapons_120mm_Shot.acp" "{8955A571EC4758FB}Sounds/Weapons/HeavyWeapons/KPVT/Weapons_HeavyWeapons_KPV_Handling.acp"
+   }
+   IncludeInactive 1
+  }
+  MeshObject "{CFBAA4B701F95D69}" {
+   Object "{C589CF4AB8972E9F}Assets/Weapons/HeavyWeapons/M1A1Cannon/m1a1_cannon.xob"
+  }
+  RigidBody "{60529D8BC8BA08C7}" {
+   Mass 800
+   AngularSleepingThreashold 1
+   SimState Collision
+   ModelGeometry 1
+  }
+  SCR_WeaponAttachmentsStorageComponent "{51F080D5CE45A1A2}" {
+   Attributes SCR_ItemAttributeCollection "{51F080D5C64F12C5}" {
+    ItemDisplayName WeaponUIInfo "{5222CB07E1D123E9}" {
+     Name "120mm Cannon"
+     Description ""
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{5D1AB3B09D6439E8}" {
+     Weight 52.5
+     SizeSetupStrategy Volume
+     ItemVolume 12000
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{5534BB9B9A3E369E}" {
+      CameraPreset Left
+      CameraDistanceToItem 1.9
+     }
+    }
+    m_bDraggable 0
+   }
+  }
+  SlotManagerComponent "{5D34B8582DDFD525}" {
+   Slots {
+    EntitySlotInfo CamoNet {
+    }
+   }
+  }
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    AttachmentSlotComponent "{5D1AB3B09D6439C4}" {
+     AttachmentSlot InventoryStorageSlot optics {
+      PivotID "slot_optics"
+      ChildPivotID "snap_weapon"
+      Enabled 0
+     }
+    }
+    SightsComponent "{BB23A637957CFFF8}" {
+     SightsPosition PointInfo "{BB23A63796688E69}" {
+      PivotID "eye"
+     }
+     CameraRecoilAmount 2
+    }
+    MuzzleComponent "{50F64C4591CD7AA6}" {
+     components {
+      CaseEjectingEffectComponent "{5122AAD190FCA21D}" {
+       ParticleEffect "{80F872E85C003706}Particles/Weapon/Smoke_120mm_Smoothbore.ptc"
+       EffectPosition EntitySlotInfo "{513A938439231378}" {
+        PivotID "barrel_muzzle"
+        Angles 0 0 0
+       }
+       WaterSurface 8100
+       HasSound 1
+      }
+      CaseEjectingEffectComponent "{6052BBEB1448110B}" {
+       ParticleEffect "{EF06660D8B900D54}Particles/Weapons/Smoke_Cannon_Larger_Emmiter.ptc"
+       EffectPosition EntitySlotInfo Muzzle {
+        PivotID "barrel_muzzle"
+        Offset 0 0 0.15
+       }
+      }
+      SCR_MuzzleEffectComponent "{C9B3271BB22CDB68}" {
+       ParticleEffect "{E7B038134399B942}Particles/Weapon/Muzzle_120mm_Smoothbore.ptc"
+       EffectPosition EntitySlotInfo "{C9B3271BB85B5D32}" {
+        Offset 0 0 0.8158
+        Angles 0 0 0
+       }
+      }
+     }
+     ChamberedAmmo 0
+     FireModes {
+      BaseFireMode "{B80A64F4A8EF8333}" {
+       MaxBurst -1
+       RoundsPerMinute 16
+      }
+     }
+     MagazineWell MagazineWell120M1A1 "{5D1AB3B09D6439F0}" {
+     }
+     DispersionRange 575
+     WeaponAimModifiers {
+      RecoilWeaponAimModifier "{5D1AB3B09D6439CC}" {
+       LinearData RecoilData "{5D1AB3B09D6439CB}" {
+        "Curve X" {
+         0 0.5 0.029 0.641 0.151 0.43 0.382 0.508 1 0.5
+        }
+        "Curve Y" {
+         0 0.5 0.032 0.55 0.045 0.75 0.065 0.7 0.071 0.65 0.095 0.5 0.25 0.45 0.45 0.52 0.7 0.495 1 0.5
+        }
+        "Curve Z" {
+         0 0.5 0.032 0.65 0.045 0.95 0.065 0.95 0.071 0.85 0.095 0.7 0.25 0.35 0.45 0.55 0.7 0.485 1 0.5
+        }
+        "Curve Time Scale" 0.666
+        "Curve Magnitudes" 1 1 1
+        "Curve Mins" -0.001 -0.006 -0.07
+        "Curve Maxs" 0 -0.005 -0.018
+        "Base Recoil Scale" 5
+        "OneHand Scale" 2
+       }
+       AngularData RecoilData "{604CD4A59570BAE5}" {
+        "Curve X" {
+         0 0.5 0.026 0.961 0.437 0.463 1 0.5
+        }
+        "Curve Y" {
+         0 0.5 0.092 1 0.243 0.521 1 0.5
+        }
+        "Curve Time Scale" 0.694
+        "Base Recoil Scale" 5
+        "OneHand Scale" 2
+       }
+       TurnOffsetData RecoilData "{604CD4A5696325C9}" {
+        "Curve X" {
+         0 0.5 0.092 1 0.243 0.521 1 0.5
+        }
+        "Curve Y" {
+         0 0.5 0.092 1 0.243 0.521 1 0.5
+        }
+        "Curve Time Scale" 1
+        "Base Recoil Scale" 3
+        "OneHand Scale" 2
+       }
+      }
+     }
+     UIInfo MuzzleUIInfo "{2FBBA72C906C627E}" {
+      m_bShowCaliber 1
+      m_sCaliber "120mm"
+     }
+     ReloadDuration 4
+     OutOfADSWhileReloading 0
+     MagazinePosition InventoryStorageSlot "{B80A64F4C834E9CB}" {
+      PivotID ""
+      Offset -0.0831 -0.031 -1.3195
+     }
+     MagazineTemplate "{316CBF0FCF276778}Prefabs/Weapons/Magazines/Canister_120mm_M1A1_APFSDS.et"
+    }
+    WeaponAnimationComponent "{6054A859C4F21FC6}" {
+     AnimGraph "{5C41727F96285D4E}Assets/Weapons/MachineGuns/workspaces/M249.agr"
+     AnimInstance "{E2DF83DEEE9355A1}Assets/Weapons/HeavyWeapons/workspaces/Cannon_weapon.asi"
+     AlwaysActive 1
+     AnimInjection AnimationAttachmentInfo "{6054B2F5F085D99E}" {
+      AnimGraph "{6791BE2144ADC6A3}Assets/Weapons/HeavyWeapons/workspaces/M2HB_m998.agr"
+      AnimInstance "{90F5E30119FE8312}Assets/Weapons/HeavyWeapons/workspaces/M2HB_Player_tripod.asi"
+      BindingName "Weapon"
+     }
+     BindWithInjection 1
+     AnimCommandsToBind {
+      ""
+     }
+    }
+   }
+   UIInfo WeaponUIInfo "{CC3BA6A2C42F09F4}" {
+    Name "Smoothbore Cannon"
+    Description ""
+    m_bShowWeaponName 1
+   }
+   WeaponSlotType "hmg"
+  }
+ }
+ coords 2259.5 51.2 2160
+}

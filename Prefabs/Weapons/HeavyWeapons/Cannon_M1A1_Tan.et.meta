@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{443DCB1AC94C7501}Prefabs/Weapons/HeavyWeapons/Cannon_M1A1_Tan.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

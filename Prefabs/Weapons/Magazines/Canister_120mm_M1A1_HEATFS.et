@@ -1,0 +1,57 @@
+GenericEntity : "{D99AF37E07F32ECB}Prefabs/Weapons/Magazines/Box_762x54_PK_250rnd_Base.et" {
+ ID "5F8B274FDBD4F390"
+ components {
+  AICombatPropertiesComponent "{59CE86D96C332DDF}" {
+   Priority 50
+   UsedAgainst 4
+  }
+  InventoryMagazineComponent "{51EED12B803954CC}" {
+   Attributes SCR_ItemAttributeCollection "{51EED12B86960275}" {
+    ItemDisplayName UIInfo "{51FEE38527BFEA5B}" {
+     Name "120mm HEATFS"
+     Description ""
+    }
+    ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     Weight 15
+     ItemDimensions 20 20 15
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{52D6B596E5B55903}" {
+      CameraDistanceToItem 2.5
+     }
+    }
+    m_Size SLOT_2x1
+   }
+   WeightPerAmmo 0
+  }
+  MagazineComponent "{CA6BE4D6B4DAFD69}" {
+   MagazineWell MagazineWell120M1A1 "{5F8B274F3566936E}" {
+   }
+   UIInfo MagazineUIInfo "{57126733AA401586}" {
+    Name "120mm HEATFS"
+    Description ""
+    m_sAmmoCaliber "120mm"
+    m_sAmmoType "HEATFS"
+    m_bShowAmmoTypeText 1
+    m_eAmmoTypeFlags HEAT
+   }
+   MaxAmmo 1
+   AmmoConfig "{381519E91845C864}Configs/Weapons/Ammo/Ammo_120mm_M1A1.conf"
+   AmmoMapping {
+    0
+   }
+  }
+  MeshObject "{CA6BE4D6A23F8EF0}" {
+   Object "{62CE86C408FE8A42}Assets/Weapons/Ammo/120mm/M830_Cartridge.xob"
+  }
+  ActionsManagerComponent "{F092E6B0537754FD}" {
+   ActionContexts {
+    UserActionContext "{5086F9AB010868CE}" {
+     Position PointInfo "{5086F9AC96DB9752}" {
+      Offset 0 0.025 0.3156
+     }
+    }
+   }
+  }
+ }
+}

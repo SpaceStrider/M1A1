@@ -1,0 +1,37 @@
+Tank : "{B47B16E8DB493898}Prefabs/Vehicles/Tracked/M1A1/M1A1.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Object "{C18608A6EA32B935}Assets/Vehicles/Tracked/M1A1/m1a2_abrams.xob"
+  }
+  RigidBody "{51DAA09FECF52BBF}" {
+   Mass 61700
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    Name "#Abrams-EditableEntity_M1A2_Name"
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
+      m_Value 5000
+     }
+    }
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{5E38B84FCEFF0E6D}" {
+   MultiSlots {
+    MultiSlotConfiguration "{5E38B84FCEFF0E66}" {
+     SlotTemplate InventoryStorageSlot bandage {
+      Prefab "{FACE6934D2A9A930}Prefabs/Weapons/Magazines/Canister_120mm_M1A1_APFSDS_02.et"
+     }
+    }
+   }
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo Turret {
+     Prefab "{79991EBD111EC9CA}Prefabs/Vehicles/Tracked/M1A2/VehParts/Turret/M1A2_Turret.et"
+    }
+   }
+  }
+ }
+}

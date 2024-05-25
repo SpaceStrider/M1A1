@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{3A4C15F383D63ACC}Prefabs/Weapons/HeavyWeapons/Cannon_M1A1_MERDC.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

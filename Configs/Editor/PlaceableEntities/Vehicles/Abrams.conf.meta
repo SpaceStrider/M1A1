@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{6B561E38DE441E51}Configs/Editor/PlaceableEntities/Vehicles/Abrams.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

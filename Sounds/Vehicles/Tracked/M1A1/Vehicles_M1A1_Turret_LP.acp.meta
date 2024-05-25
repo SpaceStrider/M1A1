@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{B8C2EC00D3950964}Sounds/Vehicles/Tracked/M1A1/Vehicles_M1A1_Turret_LP.acp"
+ Configurations {
+  AudioProjectResourceClass PC {
+  }
+  AudioProjectResourceClass XBOX_ONE : PC {
+  }
+  AudioProjectResourceClass XBOX_SERIES : PC {
+  }
+  AudioProjectResourceClass PS4 : PC {
+  }
+  AudioProjectResourceClass HEADLESS : PC {
+  }
+ }
+}

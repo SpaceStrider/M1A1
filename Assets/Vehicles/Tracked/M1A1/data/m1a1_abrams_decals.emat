@@ -1,0 +1,12 @@
+MatPBRDecal {
+ Color 0 0 0 1
+ BlendMode AlphaBlend
+ MetalnessScale 0
+ BCRMap "{881354997C629FF8}Assets/_SharedData/Metal/ST_metal_painted_rusted_02_BCR.edds"
+ OpacityMap "{1F0DC5A59D8919B4}Assets/Vehicles/Tracked/M1A1/data/Textures/m1a1_abrams_decals_A.edds"
+ GBufferNormal 1
+ NormalCombinePower 1
+ GBufferRoughness 1
+ GBufferMetalness 1
+ GBufferAO 1
+}

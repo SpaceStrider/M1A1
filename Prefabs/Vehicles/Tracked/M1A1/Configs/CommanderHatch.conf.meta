@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{F07C025E13E6EC07}Prefabs/Vehicles/Tracked/M1A1/CommanderHatch.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

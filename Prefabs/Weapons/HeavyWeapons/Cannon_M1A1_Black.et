@@ -1,0 +1,13 @@
+GenericEntity : "{BE724873D72CEF7D}Prefabs/Weapons/HeavyWeapons/Cannon_M1A1.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  MeshObject "{CFBAA4B701F95D69}" {
+   Materials {
+    MaterialAssignClass "{5D262563ECA3EAA2}" {
+     SourceMaterial "m1a1_abrams"
+     AssignedMaterial "{69CC25F19FDA2470}Assets/Vehicles/Tracked/M1A1/data/m1a1_abrams_Black.emat"
+    }
+   }
+  }
+ }
+}

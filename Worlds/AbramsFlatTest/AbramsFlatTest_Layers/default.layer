@@ -1,0 +1,272 @@
+$grp GenericEntity {
+ {
+  coords 123.776 1 239.485
+ }
+ {
+  coords 123.354 1 224.948
+ }
+ {
+  coords 123.37 1 232.155
+ }
+}
+Turret : "{021013CDF82340ED}Prefabs/Vehicles/Tracked/M1A2/VehParts/Turret/M1A2_Tusk_Turret_Tan.et" {
+ coords 20.7 1 235.03
+}
+GenericEntity : "{0D97F8BC23D20BFC}Prefabs/Vehicles/Tracked/M1A1/VehParts/M1A1_Camonet_Turret_01.et" {
+ coords 91.477 1 217.439
+}
+Tank M1A1 : "{12F73C9958E56455}Prefabs/Vehicles/Tracked/M1A2/M1A2.et" {
+ coords 30.36 1 246.986
+}
+GenericEntity : "{14C08944C95E37E1}Prefabs/Vehicles/Tracked/M1A2/VehParts/M1A2_Turret_M2Supports.et" {
+ coords 94.314 1 247.837
+}
+GenericEntity : "{1547181F6A3901C9}Prefabs/Vehicles/Tracked/M1A2/VehParts/ERA/M1A2_Turret_TuskSupports_MERDC.et" {
+ coords 102.992 1 232.767
+}
+Tank M1A2_TUSK_Tan1 : "{19DE71593DCD6CBA}Prefabs/Vehicles/Tracked/M1A2/M1A2_TUSK_Tan.et" {
+ coords 40.888 1 234.561
+}
+GenericEntity : "{2114E1618D017FAC}Prefabs/Vehicles/Wheeled/M151A2/Dst/M151A1_window_front.et" {
+ coords 118.624 1 251.248
+}
+GenericEntity : "{2D57DD5FB49350A2}Prefabs/Vehicles/Tracked/M1A2/VehParts/M1A2_Engine_Grill_MERDC.et" {
+ coords 89.241 1 245.07
+}
+GenericEntity : "{2EA1049740ABC1CB}Prefabs/Vehicles/Tracked/M1A2/VehParts/ERA/M1A2_TuskIISupports.et" {
+ coords 107.584 1 246.064
+}
+$grp VehiclePartRotor : "{31CC44C2EDD743B7}Prefabs/Vehicles/Helicopters/UH1H/VehParts/Rotor/VehPart_UH1H_rotor_main.et" {
+ {
+  coords 49.444 1 203.865
+ }
+ {
+  coords 126.705 1 232.107
+ }
+}
+Turret : "{36976D03FE9C7FDE}Prefabs/Vehicles/Tracked/M1A1/VehParts/Turret/M1A1_Turret_Tan.et" {
+ coords 72.964 1 234.463
+}
+Tank M1A2_MERDC1 : "{37FA63183F209EEE}Prefabs/Vehicles/Tracked/M1A2/M1A2_MERDC.et" {
+ coords 35.653 1 246.986
+}
+Tank M1A1_Tan1 : "{3C3ADBCCDA1D877B}Prefabs/Vehicles/Tracked/M1A1/M1A1_Tan.et" {
+ coords 73.392 1 247.11
+}
+GenericEntity : "{42A8A6FA5D3DCF79}Prefabs/Vehicles/Core/ERA/ARAT2/ARAT2_Base.et" {
+ coords 130.192 1 246.876
+}
+GenericEntity : "{49DC61338D5FAC64}Prefabs/Weapons/HeavyWeapons/HMG_M2HB_M1A1.et" {
+ coords 60.913 2.616 220.854
+}
+GenericEntity : "{4E5531CDAE20F9EF}Prefabs/Vehicles/Wheeled/M151A2/M151A2_canvas_roof.et" {
+ coords 95.005 1 237.658
+}
+GenericEntity : "{4FCC17FC3DE01EF6}Prefabs/Vehicles/Tracked/M1A2/VehParts/ERA/M1A2_Turret_TuskSupports.et" {
+ coords 101.866 1 246.397
+}
+Tank M1A1_Net1 : "{56DB823510AFCD8D}Prefabs/Vehicles/Tracked/M1A1/M1A1_Net.et" {
+ coords 68.421 1 247.11
+}
+Tank M1A2_Black1 : "{59C459B930D805CF}Prefabs/Vehicles/Tracked/M1A2/M1A2_Black.et" {
+ coords 45.329 1 246.986
+}
+Turret : "{5C7634FA342E3528}Prefabs/Vehicles/Tracked/M1A1/VehParts/Turret/M1A1_Turret_Net.et" {
+ coords 68.379 1 234.507
+}
+TracerProjectile : "{5D7DDA86F9AC9505}Prefabs/Weapons/Ammo/Ammo_120mm_APFSDS-T_M829A1.et" {
+ coords 5.937 1 232.483
+}
+Vehicle UH1H1 : "{70BAEEFC2D3FEE64}Prefabs/Vehicles/Helicopters/UH1H/UH1H.et" {
+ coords 142.799 1 232.895
+}
+Turret : "{772761F4454BABF4}Prefabs/Vehicles/Tracked/M1A1/VehParts/CommanderTurret/M1A1_Commander_Turret.et" {
+ coords 58.911 1 226.629
+}
+Turret : "{79991EBD111EC9CA}Prefabs/Vehicles/Tracked/M1A2/VehParts/Turret/M1A2_Turret.et" {
+ coords 12.379 1 247.496
+}
+GenericEntity : "{7B7922BE65C19AE8}Prefabs/Vehicles/Tracked/M1A2/VehParts/ERA/M1A2_Turret_TuskSupports_Black.et" {
+ coords 102.344 1 239.737
+}
+Turret : "{7DF1E9EF24B53402}Prefabs/Vehicles/Tracked/M1A2/VehParts/Turret/M1A2_TuskII_Turret.et" {
+ coords 11.282 1 220.619
+}
+TracerProjectile : "{81D0B2BFF9D25E63}Prefabs/Weapons/Ammo/Ammo_120mm_APFSDS-T_M829A2.et" {
+ coords 5.348 1 232.467
+}
+GenericEntity : "{81E998C5E7B65795}Prefabs/Weapons/Warheads/Warhead_Spall_M829A2.et" {
+ coords 5.363 1 234.097
+}
+GenericEntity : "{83531528D1E9E661}Prefabs/Vehicles/Core/ERA/ARAT/Green/ARAT_L01.et" {
+ coords 121.627 1 251.133
+}
+GenericEntity : "{840EC6D3791EF277}Prefabs/Vehicles/Tracked/M1A2/VehParts/M1A2_BasketExtention_Tan.et" {
+ coords 3.192 1 221.375
+}
+Turret : "{8475DC4E63D8B223}Prefabs/Vehicles/Tracked/M1A2/VehParts/Turret/M1A2_TuskII_Turret_MERDC.et" {
+ coords 15.768 1 220.619
+}
+GenericEntity : "{85FA621B61AA5BD9}Prefabs/Weapons/HeavyWeapons/HMG_KPVT.et" {
+ coords 61.687 1 218.123
+}
+Tank M1A1_Black1 : "{8BA532C0A417859D}Prefabs/Vehicles/Tracked/M1A1/M1A1_Black.et" {
+ coords 78.289 1 247.11
+}
+GenericEntity : "{8FF08C14179246D6}Prefabs/Vehicles/Core/ERA/ARAT/ARAT_Base.et" {
+ coords 123.898 1 245.976
+}
+GenericEntity : "{9058D61B520DE32B}Prefabs/Vehicles/Wheeled/M923A1/VehParts/M923A1_sparetire_holder.et" {
+ coords 53.186 1 228.649
+}
+Tank M1A2_TUSK_Black1 : "{932D5755FFFA47F6}Prefabs/Vehicles/Tracked/M1A2/M1A2_TUSK_Black.et" {
+ coords 45.92 1 234.561
+}
+Turret : "{9467D1815209BA3E}Prefabs/Vehicles/Tracked/M1A2/VehParts/Turret/M1A2_TuskII_Turret_Tan.et" {
+ coords 20.028 1 220.619
+}
+GenericEntity : "{986BBDD66E50B41F}Prefabs/Props/Core/Triplex_Placeholder.et" {
+ coords 81.695 1 253.042
+}
+Vehicle M923A1 : "{9A0D72816DFFDB7F}Prefabs/Vehicles/Wheeled/M923A1/M923A1.et" {
+ coords 52.564 1 237.56
+}
+Tank M1A2_TUSKII_Black1 : "{9E75561ED3F116FC}Prefabs/Vehicles/Tracked/M1A2/M1A2_TUSKII_Black.et" {
+ coords 47.316 1 221.051
+}
+Turret : "{9F61123281BFC8D8}Prefabs/Vehicles/Tracked/M1A1/VehParts/Turret/M1A1_Turret_MERDC.et" {
+ coords 63.409 1 235.183
+}
+Tank M1A2_TUSKII_Tan1 : "{9FCB847F17AA2D7E}Prefabs/Vehicles/Tracked/M1A2/M1A2_TUSKII_Tan.et" {
+ coords 41.258 1 220.662
+}
+GenericEntity : "{A0E4130C2D86B4B9}Prefabs/Vehicles/Wheeled/BTR70/VehParts/Wheels/BTR70_wheel_left_01.et" {
+ components {
+  ActionsManagerComponent "{5E1CA64E3C981BB5}" {
+   additionalActions {
+    SCR_RepairAtSupportStationAction "{5E1CA64E403626F3}" {
+    }
+   }
+  }
+ }
+ coords 123.304 1.956 252.479
+}
+GenericEntity : "{A3BB08F915355686}Prefabs/Vehicles/Tracked/M1A2/VehParts/ERA/M1A2_TuskIISupports_Black.et" {
+ coords 107.412 1 239.25
+}
+Turret : "{A432FE3C14FB7BD7}Prefabs/Vehicles/Tracked/M1A2/VehParts/Turret/M1A2_Tusk_Turret_Black.et" {
+ coords 24.999 1 235.03
+}
+GenericEntity : "{A631817E7D80A811}Prefabs/Vehicles/Tracked/M1A1/VehParts/M1A1_Camonet_Hull_01.et" {
+ coords 87.411 1 221.899
+}
+GenericEntity : "{A81F4C8D479E57C7}Prefabs/Vehicles/Core/ERA/ARAT2Turret/ARAT2_Turret.et" {
+ coords 137.315 1 247.941
+}
+Turret : "{A9433149B97E4E01}Prefabs/Vehicles/Tracked/M1A2/VehParts/Turret/M1A2_Turret_Black.et" {
+ coords 24.783 1 247.496
+}
+GenericEntity : "{A958A61D3FAEBC41}Prefabs/Vehicles/Tracked/M1A2/VehParts/ERA/M1A2_TuskSupports.et" {
+ coords 116.455 1 245.493
+}
+Projectile : "{AA48031F6DAE2863}Prefabs/Weapons/Ammo/Ammo_APFSDS_M829A1_Spall.et" {
+ coords 5.963 1 234.99
+}
+GenericEntity : "{B21B803A22ED33F7}Prefabs/Vehicles/Tracked/M1A2/VehParts/M1A2_BasketExtention_MERDC.et" {
+ coords 3.112 1 225.404
+}
+Tank M1A2 : "{B47B16E8DB493898}Prefabs/Vehicles/Tracked/M1A1/M1A1.et" {
+ coords 58.954 1 247.11
+}
+GenericEntity : "{B54F3CF1337D9B85}Prefabs/Vehicles/Tracked/M1A2/VehParts/ERA/M1A2_Turret_TuskSupports_Tan.et" {
+ coords 103.398 1 225.183
+}
+GenericEntity : "{B665E4F9C6F7D9E2}Prefabs/Vehicles/Tracked/M1A2/VehParts/ERA/M1A2_TuskSupports_Black.et" {
+ coords 116.439 1 239.352
+}
+Projectile : "{B77EA33FD42B994F}Prefabs/Weapons/Ammo/Ammo_APFSDS_3BM15_Spall.et" {
+ coords 4.516 1 234.996
+}
+GenericEntity : "{B7E5C0105B6525E4}Prefabs/Vehicles/Tracked/M1A2/VehParts/ERA/M1A2_TuskSupports_Tan.et" {
+ coords 117.548 1 224.742
+}
+GenericEntity : "{B9BB95A5F6594528}Prefabs/Weapons/Warheads/Warhead_Spall_3BM15.et" {
+ coords 4.422 1 234.134
+}
+Turret : "{BC55E9E794C93DF0}Prefabs/Vehicles/Tracked/M1A2/VehParts/Turret/M1A2_Tusk_Turret.et" {
+ coords 11.922 1 235.03
+}
+GenericEntity : "{BE724873D72CEF7D}Prefabs/Weapons/HeavyWeapons/Cannon_M1A1.et" {
+ coords 57.506 1 220.024
+}
+Vehicle BTR1 : "{C012BB3488BEA0C2}Prefabs/Vehicles/Wheeled/BTR70/BTR70.et" {
+ coords 52.968 1 248.117
+}
+Turret : "{C06BC8C9F56F0AA1}Prefabs/Vehicles/Tracked/M1A1/VehParts/Turret/M1A1_Turret.et" {
+ coords 58.727 1 235.605
+}
+GenericEntity : "{C09AF6A3940A3390}Prefabs/Vehicles/Tracked/M1A2/VehParts/M1A2_Engine_Grill.et" {
+ coords 88.941 1 247.532
+}
+GenericEntity : "{C366EF1984AD7924}Prefabs/Vehicles/Tracked/M1A2/VehParts/ERA/M1A2_TuskIISupports_Tan.et" {
+ coords 108.196 1 224.304
+}
+Turret : "{C77D0BE8B686D520}Prefabs/Vehicles/Tracked/M1A2/VehParts/Turret/M1A2_Turret_MERDC.et" {
+ coords 16.654 1 247.496
+}
+Turret : "{CA0CC49D1B03E0F6}Prefabs/Vehicles/Tracked/M1A2/VehParts/Turret/M1A2_Tusk_Turret_MERDC.et" {
+ coords 16.225 1 235.03
+}
+GenericEntity : "{CD8532581ACDCDA7}Prefabs/Vehicles/Tracked/M1A2/VehParts/ERA/M1A2_TuskIISupports_MERDC.et" {
+ coords 107.628 1 231.955
+}
+Tank M1A2_Tan1 : "{CE4C2B81BFAA47E4}Prefabs/Vehicles/Tracked/M1A2/M1A2_Tan.et" {
+ coords 40.579 1 246.986
+}
+Turret : "{D80B4DFBE799B4F6}Prefabs/Vehicles/Tracked/M1A2/VehParts/Turret/M1A2_Turret_Tan.et" {
+ coords 20.681 1 247.496
+}
+GenericEntity : "{D85BDE58C90F42C3}Prefabs/Vehicles/Tracked/M1A2/VehParts/ERA/M1A2_TuskSupports_MERDC.et" {
+ coords 116.962 1 232.317
+}
+GenericEntity : "{DC25BA9B2D15A8D6}Prefabs/Vehicles/Tracked/M1A2/VehParts/M1A2_BasketExtention_Black.et" {
+ coords 3.352 1 215.257
+}
+Tank M1A2_TUSKII1 : "{DF904EC4C4A8CB7D}Prefabs/Vehicles/Tracked/M1A2/M1A2_TUSKII.et" {
+ coords 30.641 1 220.662
+}
+Tank M1A1_MERDC1 : "{E59B0861ABEF1EBC}Prefabs/Vehicles/Tracked/M1A1/M1A1_MERDC.et" {
+ coords 63.819 1 247.11
+}
+Turret : "{EA4BE6EF6C202902}Prefabs/Vehicles/Tracked/M1A2/VehParts/Turret/M1A2_TuskII_Turret_Black.et" {
+ coords 24.576 1 220.619
+}
+Projectile : "{EAB8223ADBB2AA24}Prefabs/Weapons/Ammo/Ammo_APFSDS_M829A2_Spall.et" {
+ coords 5.366 1 234.971
+}
+GenericEntity : "{EDBDAC255B72D8BB}Prefabs/Weapons/Warheads/Warhead_Spall_M829A1.et" {
+ coords 5.964 1 234.127
+}
+Tank M1A2_TUSKII_MERDC1 : "{F04B6CBFDC098DDD}Prefabs/Vehicles/Tracked/M1A2/M1A2_TUSKII_MERDC.et" {
+ coords 35.863 1 220.662
+}
+TracerProjectile : "{F14086F5170D1457}Prefabs/Weapons/Ammo/Ammo_125mm_APFSDS_3BM15.et" {
+ coords 4.489 1 232.765
+}
+Turret : "{F15F28938E4753F9}Prefabs/Vehicles/Tracked/M1A1/VehParts/Turret/M1A1_Turret_Black.et" {
+ coords 78.291 1 234.705
+}
+$grp GenericEntity : "{F96F7F236286E2FC}Prefabs/Vehicles/Tracked/M1A2/VehParts/M1A2_BasketExtention.et" {
+ {
+  coords 2.855 1 231.514
+ }
+ {
+  coords 90.385 1 251.933
+ }
+}
+Tank M1A2_TUSK1 : "{F9FF4BDD5F962A2D}Prefabs/Vehicles/Tracked/M1A2/M1A2_TUSK.et" {
+ coords 30.738 1 234.561
+}
+Tank M1A2_TUSK_MERDC1 : "{FD136DF4F002DCD7}Prefabs/Vehicles/Tracked/M1A2/M1A2_TUSK_MERDC.et" {
+ coords 35.721 1 234.561
+}

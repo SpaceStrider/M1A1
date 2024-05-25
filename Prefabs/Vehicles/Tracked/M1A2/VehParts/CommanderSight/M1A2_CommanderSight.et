@@ -1,0 +1,20 @@
+GenericEntity {
+ ID "5D3A5561861880F5"
+ components {
+  MeshObject "{5D3A5561861880F0}" {
+   Object "{A77C6FCC683E677C}Assets/Vehicles/Tracked/M1A1/m1a2_abrams_CommanderSight.xob"
+  }
+  Hierarchy "{5D3A5561861880CE}" {
+  }
+  RigidBody "{5D3A5561861880CB}" {
+   Enabled 0
+   Mass 100
+   ModelGeometry 1
+  }
+  SCR_HitZoneContainerComponent "{5D3A5561861880CA}" {
+   Enabled 0
+  }
+  RplComponent "{5D3A5561861880C9}" {
+  }
+ }
+}

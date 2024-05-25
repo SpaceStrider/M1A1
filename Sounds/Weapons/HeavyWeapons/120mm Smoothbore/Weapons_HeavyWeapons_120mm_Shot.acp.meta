@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{EEC626B3150013D0}Sounds/Weapons/HeavyWeapons/KPVT/Weapons_HeavyWeapons_120mm_Shot.acp"
+ Configurations {
+  AudioProjectResourceClass PC {
+  }
+  AudioProjectResourceClass XBOX_ONE : PC {
+  }
+  AudioProjectResourceClass XBOX_SERIES : PC {
+  }
+  AudioProjectResourceClass PS4 : PC {
+  }
+  AudioProjectResourceClass HEADLESS : PC {
+  }
+ }
+}

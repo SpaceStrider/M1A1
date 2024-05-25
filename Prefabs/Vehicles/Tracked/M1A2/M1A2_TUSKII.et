@@ -1,0 +1,33 @@
+Tank : "{F9FF4BDD5F962A2D}Prefabs/Vehicles/Tracked/M1A2/M1A2_TUSK.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  RigidBody "{51DAA09FECF52BBF}" {
+   Mass 66500
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    Name "#Abrams-EditableEntity_M1A2_TUSKII_Name"
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
+      m_Value 5800
+     }
+    }
+   }
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo Turret {
+     Prefab "{7DF1E9EF24B53402}Prefabs/Vehicles/Tracked/M1A2/VehParts/Turret/M1A2_TuskII_Turret.et"
+    }
+    RegisteringComponentSlotInfo TuskSupports {
+     Prefab "{2EA1049740ABC1CB}Prefabs/Vehicles/Tracked/M1A2/VehParts/ERA/M1A2_TuskIISupports.et"
+    }
+    RegisteringComponentSlotInfo EngineCover {
+     MergePhysics 1
+     Prefab "{2D57DD5FB49350A2}Prefabs/Vehicles/Tracked/M1A2/VehParts/M1A2_Engine_Grill_MERDC.et"
+     RegisterDamage 1
+    }
+   }
+  }
+ }
+}

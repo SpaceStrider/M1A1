@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{F71308C2E3656EA6}UI/Textures/Sights/AbramsGAS/GAS-white_UI.edds"
+ Configurations {
+  TIFFResourceClass PC {
+  }
+  TIFFResourceClass XBOX_ONE : PC {
+  }
+  TIFFResourceClass XBOX_SERIES : PC {
+  }
+  TIFFResourceClass PS4 : PC {
+  }
+  TIFFResourceClass HEADLESS : PC {
+  }
+ }
+}

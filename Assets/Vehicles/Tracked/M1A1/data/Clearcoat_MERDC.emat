@@ -1,0 +1,8 @@
+MatPBRMulti : "{0297528F2283D0F3}Assets/Vehicles/Tracked/M1A1/data/Clearcoat.emat" {
+ Color_2 0.638 0.638 0.638 1
+ BCR_2 "{A608831D3FC47080}Assets/Vehicles/Tracked/M1A1/data/Textures/Clearcoat_MERDC_BCR.edds"
+ UVTransform_2 MatUVTransform "{606EA565C73F613B}" {
+  TilingU 1
+  TilingV 1
+ }
+}

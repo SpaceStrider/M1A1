@@ -1,0 +1,12 @@
+GenericEntity : "{BE724873D72CEF7D}Prefabs/Weapons/HeavyWeapons/Cannon_M1A1.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  SlotManagerComponent "{5D34B8582DDFD525}" {
+   Slots {
+    EntitySlotInfo CamoNet {
+     Prefab "{B9FE7BE70E0FE8E0}Prefabs/Weapons/HeavyWeapons/M1A1_CamoNet_Cannon.et"
+    }
+   }
+  }
+ }
+}
