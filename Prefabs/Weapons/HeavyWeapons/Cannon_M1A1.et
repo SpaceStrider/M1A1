@@ -44,13 +44,6 @@ GenericEntity : "{F54F6C453A8CB478}Prefabs/Weapons/Core/MachineGun_Base.et" {
   }
   WeaponComponent "{CFBAA4B706BA66E8}" {
    components {
-    AttachmentSlotComponent "{5D1AB3B09D6439C4}" {
-     AttachmentSlot InventoryStorageSlot optics {
-      PivotID "slot_optics"
-      ChildPivotID "snap_weapon"
-      Enabled 0
-     }
-    }
     SightsComponent "{BB23A637957CFFF8}" {
      SightsPosition PointInfo "{BB23A63796688E69}" {
       PivotID "eye"
@@ -148,18 +141,11 @@ GenericEntity : "{F54F6C453A8CB478}Prefabs/Weapons/Core/MachineGun_Base.et" {
      }
      MagazineTemplate "{316CBF0FCF276778}Prefabs/Weapons/Magazines/Canister_120mm_M1A1_APFSDS.et"
     }
-    WeaponAnimationComponent "{6054A859C4F21FC6}" {
+    WeaponAnimationComponent "{60B4EA76EB15F6E0}" {
      AnimGraph "{5C41727F96285D4E}Assets/Weapons/MachineGuns/workspaces/M249.agr"
      AnimInstance "{E2DF83DEEE9355A1}Assets/Weapons/HeavyWeapons/workspaces/Cannon_weapon.asi"
-     AlwaysActive 1
-     AnimInjection AnimationAttachmentInfo "{6054B2F5F085D99E}" {
-      AnimGraph "{6791BE2144ADC6A3}Assets/Weapons/HeavyWeapons/workspaces/M2HB_m998.agr"
-      AnimInstance "{90F5E30119FE8312}Assets/Weapons/HeavyWeapons/workspaces/M2HB_Player_tripod.asi"
-      BindingName "Weapon"
-     }
-     BindWithInjection 1
      AnimCommandsToBind {
-      ""
+      "" ""
      }
     }
    }
