@@ -6,5 +6,13 @@ GenericEntity : "{BB35A8E1403CDE4B}Prefabs/Weapons/HeavyWeapons/HMG_M2HB.et" {
    Static 0
    Kinematic 1
   }
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    WeaponAnimationComponent "{60B4EA76EB15F6E0}" {
+     Enabled 0
+    }
+   }
+  }
  }
+ coords 106.509 0 1250.698
 }

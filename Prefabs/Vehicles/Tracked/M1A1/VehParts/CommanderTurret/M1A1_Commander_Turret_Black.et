@@ -1,4 +1,4 @@
-Turret : "{4BFFA1E96F48E233}Prefabs/Vehicles/Tracked/M1A1/VehParts/CommanderTurret/M1A1_Commander_Turret.et" {
+Turret : "{772761F4454BABF4}Prefabs/Vehicles/Tracked/M1A1/VehParts/CommanderTurret/M1A1_Commander_Turret.et" {
  ID "51ACD0965653D003"
  components {
   MeshObject "{51ACD09C4E0B7D16}" {
@@ -10,4 +10,5 @@ Turret : "{4BFFA1E96F48E233}Prefabs/Vehicles/Tracked/M1A1/VehParts/CommanderTurr
    }
   }
  }
+ coords 96.051 0 1204.82
 }
