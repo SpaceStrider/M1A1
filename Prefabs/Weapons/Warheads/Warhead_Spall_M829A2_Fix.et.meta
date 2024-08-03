@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{B9FE7BE70E0FE8E0}Prefabs/Weapons/HeavyWeapons/M1A1_CamoNet_Cannon.et"
+ Name "{7A06EF7B87599796}Prefabs/Weapons/Warheads/Warhead_Spall_M829A2_Fix.et"
  Configurations {
   EntityTemplateResourceClass PC {
   }
@@ -9,9 +9,9 @@ MetaFileClass {
   }
   EntityTemplateResourceClass PS4 : PC {
   }
-  EntityTemplateResourceClass HEADLESS : PC {
-  }
   EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
   }
  }
 }
