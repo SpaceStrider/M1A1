@@ -1,0 +1,18 @@
+TracerProjectile : "{5D7DDA86F9AC9505}Prefabs/Weapons/Ammo/Ammo_120mm_APFSDS-T_M829A1.et" {
+ ID "476AE74C1F2F140D"
+ components {
+  ShellMoveComponent "{851AA4A2AE0A5691}" {
+   ProjectileEffects {
+    ProjectileDamage "{6206E6F427FFAB06}" {
+     DamageValue 7
+     DamageType Incendiary
+     DamageEffects {
+      SCR_IncendiaryBulletDamageEffect "{6206E6F422138434}" {
+      }
+     }
+    }
+   }
+  }
+ }
+ coords 1176.469 38 2835.049
+}

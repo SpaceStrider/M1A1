@@ -167,6 +167,7 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
   SCR_DamageManagerComponent "{51ACD09C524A7924}" {
    "Additional hit zones" {
     SCR_DestructibleHitzone Turret {
+     IgnoreExplosions 0
      DamageReduction 0
      DamageThreshold 0
      "Incendiary multiplier" 0
@@ -180,19 +181,20 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
      ColliderNames {
       "UBX_AmmoRack"
      }
-     IgnoreExplosions 1
+     IgnoreExplosions 0
      BaseDamageMultiplier 1
-     MaxHealth 100
-     DamageReduction 10
+     MaxHealth 10
+     DamageReduction 40
      DamageThreshold 0
      AreaOverride -1
      "Collision multiplier" 0
      "Melee multiplier" 0
-     "Kinetic multiplier" 0.01
-     "Fragmentation multiplier" 1
+     "Kinetic multiplier" 0.1
+     "Fragmentation multiplier" 10
      "Explosive multiplier" 1
-     "Incendiary multiplier" 0
+     "Incendiary multiplier" 10
      "DamageState threshold" {
+      0.7 0.4 0.2
      }
      m_aDamagePassRules {
       SCR_DamagePassRule "{5E9C464DAD2AA937}" {
@@ -214,7 +216,7 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
         6
        }
        m_eOutputDamageType INCENDIARY
-       m_fMultiplier 0
+       m_fMultiplier 100
        m_bPassToRoot 1
       }
      }
@@ -352,7 +354,7 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
     Offset 0.2253 0.0018 -0.1794
     DisablePhysicsInteraction 1
    }
-   WeaponTemplate "{6AF5FA1A839A4980}Prefabs/Weapons/MachineGuns/M60/MG_M60_Mounted.et"
+   WeaponTemplate "{326FBEC7D3AE22EC}Prefabs/Weapons/MachineGuns/M60/MG_M240C_Mounted.et"
    WeaponSlotIndex 1
   }
   SCR_TurretInventoryStorageManagerComponent "{5D26251BB4766641}" {
@@ -442,5 +444,5 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
    AutoVariablesBind 1
   }
  }
- coords 93.469 0 1239.556
+ coords 1193.177 38 2821.912
 }

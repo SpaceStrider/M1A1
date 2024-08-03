@@ -358,7 +358,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
     }
     MultiSlotConfiguration "{5E38B84FCEFFD71A}" {
      SlotTemplate InventoryStorageSlot Ammo {
-      Prefab "{AAF51CFA75A9CF8B}Prefabs/Weapons/Magazines/Box_762x51_M60_100rnd_4AP_1Tracer.et"
+      Prefab "{B0D52FDC9298FCF4}Prefabs/Weapons/Magazines/Box_762x51_M240_1200rnd_4AP_1Tracer.et"
      }
      NumSlots 5
     }
@@ -1048,7 +1048,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
    }
   }
  }
- coords 122.195 0 1248.966
+ coords 1165.379 38.016 2818.947
  m_eVehicleType TANK
  m_fTrackSpeed 0.005
 }
