@@ -217,7 +217,7 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
      Radius 0.4
     }
     UserActionContext "{5E9E15D98224C3E4}" {
-     ContextName "CommanderHatch"
+     ContextName "CommanderHatch2"
      Position PointInfo "{5E9E15D98224C3E5}" {
       PivotID "v_turret_01"
       Offset 0.5271 1.153 -0.5761
@@ -246,5 +246,5 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
    AutoVariablesBind 1
   }
  }
- coords 102.602 0 1257.863
+ coords 1170.163 38 2829.69
 }
