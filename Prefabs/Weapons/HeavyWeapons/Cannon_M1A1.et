@@ -148,6 +148,9 @@ GenericEntity : "{F54F6C453A8CB478}Prefabs/Weapons/Core/MachineGun_Base.et" {
      }
      MagazineTemplate "{316CBF0FCF276778}Prefabs/Weapons/Magazines/Canister_120mm_M1A1_APFSDS.et"
     }
+    WeaponAnimationComponent "{60B4EA76EB15F6E0}" {
+     Enabled 0
+    }
    }
    UIInfo WeaponUIInfo "{CC3BA6A2C42F09F4}" {
     Name "Smoothbore Cannon"
@@ -157,5 +160,5 @@ GenericEntity : "{F54F6C453A8CB478}Prefabs/Weapons/Core/MachineGun_Base.et" {
    WeaponSlotType "hmg"
   }
  }
- coords 111.663 0 1259.928
+ coords 1186.789 38 2834.378
 }

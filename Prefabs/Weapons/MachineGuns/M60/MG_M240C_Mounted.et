@@ -3,7 +3,7 @@ GenericEntity : "{6AF5FA1A839A4980}Prefabs/Weapons/MachineGuns/M60/MG_M60_Mounte
  components {
   WeaponSoundComponent "{5A8685198A9AEEDD}" {
    Filenames {
-    "{6206E6FAA4DF66B7}Sounds/Weapons/Machineguns/M60/Weapons_Machineguns_M240C_Shot.acp" "{9654992A68125DDF}Sounds/Weapons/Machineguns/M60/Weapons_Machineguns_M60_Handling.acp" "{E08211071D0175E2}Sounds/Weapons/_SharedData/PickUp/Weapons_PickUp_LMG.acp" "{214445E9606EFCD0}Sounds/Weapons/_SharedData/Melee/Weapons_Melee_LMG.acp" "{D8F675F3468362E2}Sounds/Weapons/_SharedData/Weapons_Sights_Actions.acp" "{5DB34B1BB17CA63B}Sounds/Weapons/_SharedData/Drop/Weapons_Drop_LMG.acp" "{10C1421961C34D26}Sounds/Weapons/_SharedData/Weapons_Deployment.acp"
+    "{D10BFA0E62F81545}Sounds/Weapons/Machineguns/M60D/Weapons_Machineguns_M60D_Shot.acp" "{9654992A68125DDF}Sounds/Weapons/Machineguns/M60/Weapons_Machineguns_M60_Handling.acp" "{E08211071D0175E2}Sounds/Weapons/_SharedData/PickUp/Weapons_PickUp_LMG.acp" "{214445E9606EFCD0}Sounds/Weapons/_SharedData/Melee/Weapons_Melee_LMG.acp" "{D8F675F3468362E2}Sounds/Weapons/_SharedData/Weapons_Sights_Actions.acp" "{5DB34B1BB17CA63B}Sounds/Weapons/_SharedData/Drop/Weapons_Drop_LMG.acp" "{10C1421961C34D26}Sounds/Weapons/_SharedData/Weapons_Deployment.acp"
    }
   }
   WeaponComponent "{CFBAA4B706BA66E8}" {
@@ -16,11 +16,27 @@ GenericEntity : "{6AF5FA1A839A4980}Prefabs/Weapons/MachineGuns/M60/MG_M60_Mounte
      }
      MagazineWell MagazineWellM240M1A1 "{6206E6F9B774366A}" {
      }
+     DispersionRange 300
+     WeaponAimModifiers {
+      RecoilWeaponAimModifier "{5534C3B6F2351D50}" {
+       LinearData RecoilData "{58789524314BEC4D}" {
+        "Curve Magnitudes" 0.3 0.3 0.3
+       }
+       AngularData RecoilData "{58789524326653EF}" {
+        "Curve Magnitudes" 0.3 0.3 0.3
+        "Curve Mins" -0.002 0.2 -1
+        "Curve Maxs" 0.001 0.3 1
+       }
+       TurnOffsetData RecoilData "{58789524322E5B0A}" {
+        "Curve Magnitudes" 0.3 0.3 0.3
+       }
+      }
+     }
      ReloadDuration 30
      MagazineTemplate "{B0D52FDC9298FCF4}Prefabs/Weapons/Magazines/Box_762x51_M240_1200rnd_4AP_1Tracer.et"
     }
    }
   }
  }
- coords 1178.798 38 2817.929
+ coords 1173.827 38 2841.627
 }
