@@ -39,7 +39,7 @@ GenericEntity : "{D99AF37E07F32ECB}Prefabs/Weapons/Magazines/Box_762x54_PK_250rn
    MaxAmmo 1
    AmmoConfig "{381519E91845C864}Configs/Weapons/Ammo/Ammo_120mm_M1A1.conf"
    AmmoMapping {
-    3
+    3 3
    }
   }
   MeshObject "{CA6BE4D6A23F8EF0}" {
@@ -55,4 +55,5 @@ GenericEntity : "{D99AF37E07F32ECB}Prefabs/Weapons/Magazines/Box_762x54_PK_250rn
    }
   }
  }
+ coords 90.499 0 1238.822
 }

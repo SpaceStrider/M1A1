@@ -13,6 +13,11 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
     "{B8C2EC00D3950964}Sounds/Vehicles/Tracked/M1A1/Vehicles_M1A1_Turret_LP.acp" "{4AF770EF76013B62}Sounds/Vehicles/Wheeled/BTR70/Vehicles_BTR70_Turret.acp"
    }
   }
+  WeaponSoundComponent "{6204D3BD15D3149E}" {
+   Filenames {
+    "{2964C2E313D7FC9C}Sounds/Vehicles/Wheeled/BTR70/Vehicles_BTR70_Turret_LP.acp" "{4AF770EF76013B62}Sounds/Vehicles/Wheeled/BTR70/Vehicles_BTR70_Turret.acp"
+   }
+  }
   BaconTankStuff_TurretStabilizationComponent "{5E68A67B97EBE981}" {
   }
   MeshObject "{51ACD09C4E0B7D16}" {
@@ -162,26 +167,37 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
   SCR_DamageManagerComponent "{51ACD09C524A7924}" {
    "Additional hit zones" {
     SCR_DestructibleHitzone Turret {
+     DamageReduction 0
+     DamageThreshold 0
+     "Incendiary multiplier" 0
+     m_aDamagePassRules {
+      SCR_DamagePassRule "{60AAF83A13B1AFB5}" {
+      }
+     }
+     m_vParticleOffset 0 0 0
     }
     SCR_VehicleHitZone AmmoRack {
      ColliderNames {
       "UBX_AmmoRack"
      }
      IgnoreExplosions 1
-     BaseDamageMultiplier 0
-     MaxHealth 1
-     DamageReduction 0
+     BaseDamageMultiplier 1
+     MaxHealth 100
+     DamageReduction 10
      DamageThreshold 0
      AreaOverride -1
      "Collision multiplier" 0
      "Melee multiplier" 0
-     "Fragmentation multiplier" 0
-     "Explosive multiplier" 0
+     "Kinetic multiplier" 0.01
+     "Fragmentation multiplier" 1
+     "Explosive multiplier" 1
+     "Incendiary multiplier" 0
      "DamageState threshold" {
      }
      m_aDamagePassRules {
       SCR_DamagePassRule "{5E9C464DAD2AA937}" {
        m_aDamageStates {
+        2
        }
        m_aSourceDamageTypes {
         3
@@ -191,11 +207,14 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
        m_bPassToRoot 1
       }
       SCR_DamagePassRule "{5E9C464DADF44A98}" {
+       m_aDamageStates {
+        2
+       }
        m_aSourceDamageTypes {
         6
        }
        m_eOutputDamageType INCENDIARY
-       m_fMultiplier 100
+       m_fMultiplier 0
        m_bPassToRoot 1
       }
      }
@@ -422,11 +441,6 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
    }
    AutoVariablesBind 1
   }
-  WeaponSoundComponent "{6204D3BD15D3149E}" {
-   Filenames {
-    "{2964C2E313D7FC9C}Sounds/Vehicles/Wheeled/BTR70/Vehicles_BTR70_Turret_LP.acp" "{4AF770EF76013B62}Sounds/Vehicles/Wheeled/BTR70/Vehicles_BTR70_Turret.acp"
-   }
-  }
  }
- coords 104.439 0 1263.141
+ coords 93.469 0 1239.556
 }

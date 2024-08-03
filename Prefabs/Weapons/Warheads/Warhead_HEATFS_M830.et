@@ -1,0 +1,25 @@
+GenericEntity : "{8C3C62C58D2DBEDA}Prefabs/Weapons/Warheads/Warhead_HEAT.et" {
+ ID "9D9BE68EA2672F76"
+ components {
+  BaseTriggerComponent "{55129E81CBAA1390}" {
+   PROJECTILE_EFFECTS {
+    ExplosionDamageContainer "{567CBC1D0F5B4AEA}" {
+     ExplosionEffects {
+      ExplosionFragmentationEffect "{567CBC1D7AB652C7}" {
+       DamageFragmentCount 150
+      }
+     }
+    }
+    SubmunitionEffect "{567CB8E002C26D97}" {
+     TriggerOnce 1
+     Prefab "{1AE33D0441B4AD97}Prefabs/Weapons/Core/Ammo_Penetrator_M830.et"
+    }
+    SubmunitionEffect "{5D692C94EC533259}" {
+     Prefab "{1A4DA95422C3FD69}Prefabs/Weapons/Core/Ammo_Spall_M830.et"
+     Count 45
+    }
+   }
+  }
+ }
+ coords 102.829 0 1230.235
+}
