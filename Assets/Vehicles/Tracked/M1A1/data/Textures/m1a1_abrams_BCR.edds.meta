@@ -11,5 +11,7 @@ MetaFileClass {
   }
   TIFFResourceClass HEADLESS : PC {
   }
+  TIFFResourceClass PS5 : PC {
+  }
  }
 }

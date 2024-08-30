@@ -1,14 +1,3 @@
-$grp GenericEntity {
- {
-  coords 123.776 1 239.485
- }
- {
-  coords 123.354 1 224.948
- }
- {
-  coords 123.37 1 232.155
- }
-}
 Turret : "{021013CDF82340ED}Prefabs/Vehicles/Tracked/M1A2/VehParts/Turret/M1A2_Tusk_Turret_Tan.et" {
  coords 20.7 1 235.03
 }
@@ -23,6 +12,9 @@ GenericEntity : "{14C08944C95E37E1}Prefabs/Vehicles/Tracked/M1A2/VehParts/M1A2_T
 }
 GenericEntity : "{1547181F6A3901C9}Prefabs/Vehicles/Tracked/M1A2/VehParts/ERA/M1A2_Turret_TuskSupports_MERDC.et" {
  coords 102.992 1 232.767
+}
+Turret : "{18343824C9D533CA}Prefabs/Vehicles/Wheeled/M998/VehParts/M1025_gun_mount_M2HB.et" {
+ coords 64.46 1 225.2
 }
 Tank M1A2_TUSK_Tan1 : "{19DE71593DCD6CBA}Prefabs/Vehicles/Tracked/M1A2/M1A2_TUSK_Tan.et" {
  coords 40.888 1 234.561
@@ -56,9 +48,6 @@ Tank M1A1_Tan1 : "{3C3ADBCCDA1D877B}Prefabs/Vehicles/Tracked/M1A1/M1A1_Tan.et" {
 GenericEntity : "{42A8A6FA5D3DCF79}Prefabs/Vehicles/Core/ERA/ARAT2/ARAT2_Base.et" {
  coords 130.192 1 246.876
 }
-GenericEntity : "{49DC61338D5FAC64}Prefabs/Weapons/HeavyWeapons/HMG_M2HB_M1A1.et" {
- coords 60.913 2.616 220.854
-}
 GenericEntity : "{4E5531CDAE20F9EF}Prefabs/Vehicles/Wheeled/M151A2/M151A2_canvas_roof.et" {
  coords 95.005 1 237.658
 }
@@ -76,6 +65,9 @@ Turret : "{5C7634FA342E3528}Prefabs/Vehicles/Tracked/M1A1/VehParts/Turret/M1A1_T
 }
 TracerProjectile : "{5D7DDA86F9AC9505}Prefabs/Weapons/Ammo/Ammo_120mm_APFSDS-T_M829A1.et" {
  coords 5.937 1 232.483
+}
+Turret : "{66596659FB0F645B}Prefabs/Vehicles/Wheeled/BTR70/VehParts/Turret/BTR70_Turret.et" {
+ coords 62.999 1 223.908
 }
 Vehicle UH1H1 : "{70BAEEFC2D3FEE64}Prefabs/Vehicles/Helicopters/UH1H/UH1H.et" {
  coords 142.799 1 232.895
@@ -199,10 +191,27 @@ Turret : "{BC55E9E794C93DF0}Prefabs/Vehicles/Tracked/M1A2/VehParts/Turret/M1A2_T
 GenericEntity : "{BE724873D72CEF7D}Prefabs/Weapons/HeavyWeapons/Cannon_M1A1.et" {
  coords 57.506 1 220.024
 }
-Vehicle BTR1 : "{C012BB3488BEA0C2}Prefabs/Vehicles/Wheeled/BTR70/BTR70.et" {
- coords 52.968 1 248.117
+$grp Vehicle : "{C012BB3488BEA0C2}Prefabs/Vehicles/Wheeled/BTR70/BTR70.et" {
+ BTR1 {
+  coords 52.968 1 248.117
+ }
+ BTR2 {
+  coords 62.299 1 208.937
+ }
 }
 Turret : "{C06BC8C9F56F0AA1}Prefabs/Vehicles/Tracked/M1A1/VehParts/Turret/M1A1_Turret.et" {
+ components {
+  SCR_BaseCompartmentManagerComponent "{51ACFBB07A14CFA6}" {
+   DoorInfoList {
+    CompartmentDoorInfo "{619034B2B39441F2}" {
+    }
+   }
+   CompartmentSlots {
+    CargoCompartmentSlot Loader {
+    }
+   }
+  }
+ }
  coords 58.727 1 235.605
 }
 GenericEntity : "{C09AF6A3940A3390}Prefabs/Vehicles/Tracked/M1A2/VehParts/M1A2_Engine_Grill.et" {
@@ -222,6 +231,9 @@ GenericEntity : "{CD8532581ACDCDA7}Prefabs/Vehicles/Tracked/M1A2/VehParts/ERA/M1
 }
 Tank M1A2_Tan1 : "{CE4C2B81BFAA47E4}Prefabs/Vehicles/Tracked/M1A2/M1A2_Tan.et" {
  coords 40.579 1 246.986
+}
+GenericEntity : "{D2B48DEBEF38D7D7}Prefabs/Weapons/MachineGuns/M249/MG_M249.et" {
+ coords 55.302 1 220.023
 }
 Turret : "{D80B4DFBE799B4F6}Prefabs/Vehicles/Tracked/M1A2/VehParts/Turret/M1A2_Turret_Tan.et" {
  coords 20.681 1 247.496

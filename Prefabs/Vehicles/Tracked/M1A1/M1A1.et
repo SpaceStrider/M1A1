@@ -107,31 +107,6 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
   }
   BaseVehicleNodeComponent "{20FB66C5B2237133}" {
    components {
-    SCR_CarControllerComponent_SA "{20FB66C5BC92275B}" {
-     MaxStartupTime 1
-     SteeringForwardSpeed +{
-     }
-     SteeringBackwardSpeed +{
-     }
-     SteeringCenterSpeed +{
-     }
-     ThrottleCurve {
-      1000 0.8 2800 0.5 3000 0
-     }
-     ReverseCurve {
-      1500 0.8 1800 0.5 2300 0
-     }
-     ClutchUncoupleTime 0.1
-     ClutchCoupleTime 0.1
-     ClutchUncoupleRpm 900
-     ClutchCoupleRpm 1600
-     Latency 1
-     UpShiftFactor 0.7
-     UpShiftRpm 1250
-     DownShiftFactor 0.65
-     DownShiftRpm 1050
-     TurboShiftFactor 1
-    }
     SCR_BaseHUDComponent "{37C2676694790BC7}" {
      InfoDisplays {
       SCR_InfoDisplay "{50E6E6F81354B90F}" {
@@ -158,6 +133,41 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
    AngularSleepingThreashold 0.5
   }
   SCR_BaseCompartmentManagerComponent "{20FB66C5DCB8DF72}" {
+   DoorInfoList {
+    CompartmentDoorInfo "{61A03A97F7A3FE8E}" {
+     ContextName "hatch_driver"
+     OpenDoorAction SCR_OpenVehicleDoorUserAction "{60B8C998D577B72E}" {
+      UIInfo SCR_ActionUIInfo "{60B8C998DB579870}" {
+       Name "#AR-UserAction_Open"
+       m_sIconName "veh_door"
+      }
+      "Sort Priority" 5
+     }
+     CloseDoorAction SCR_CloseVehicleDoorUserAction "{60B8C998F02D67D1}" {
+      UIInfo SCR_ActionUIInfo "{60B8C998FC0A0D46}" {
+       Name "#AR-UserAction_Close"
+       m_sIconName "veh_door"
+      }
+      "Sort Priority" -1
+     }
+     EntryPositionInfo PointInfo "{50B8D5DD213DC00C}" {
+      Offset 0.3576 1.5628 2.8802
+     }
+     ExitPositionInfo PointInfo "{54A2A290B157C14F}" {
+      Offset 0.3576 1.5628 2.8802
+      Angles 0 180 0
+     }
+     AlignDuringGetOut 1
+     GetInAligningTeleport 1
+     GetOutAligningTeleport 1
+     GetInSeatAligningOnEvent 1
+     AccessibilitySettings CompartmentAccessibilityContext "{5956EE25557ADF40}" {
+      BBHalfExtents 0.5 0.4 0.005
+      TraceOffset 0 0.5 1
+      ExcludePhysicsLayer 262144
+     }
+    }
+   }
    CompartmentSlots {
     PilotCompartmentSlot PilotCompartment {
      CompartmentAction SCR_GetInUserAction "{5086DB209BDE8253}" {
@@ -173,7 +183,12 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
      AdditionalActions {
       SCR_RemoveCasualtyUserAction "{5D528254D8CE5491}" {
        ParentContextList {
-        "Driver_Idle" "DriverHatch"
+        "Driver_Idle"
+       }
+      }
+      SCR_RemoveCasualtyUserAction "{61089D5E93B44D65}" {
+       ParentContextList {
+        "DriverHatch"
        }
       }
      }
@@ -181,25 +196,11 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       PivotID "v_Driver_idle"
       Angles 20 0 0
      }
+     SkipCharacterDoorAnimationsFromSeat 1
      DoorInfoList {
-      CompartmentDoorInfo "{50B8D5DDA17EB35D}" {
-       EntryPositionInfo PointInfo "{50B8D5DD213DC00C}" {
-        Offset 0 1.5369 4.2248
-        Angles 0 180 0
-       }
-       ExitPositionInfo PointInfo "{5E9C464EB116FC1E}" {
-        Offset 0 1.5369 2.8109
-       }
-       GetInTeleport 1
-       GetOutTeleport 1
-       EntryPositionAligning 0
-       SeatPositionAligning 0
-      }
-     }
-     AccessibilitySettings CompartmentAccessibilityContext "{5E9C464E9ABFE7DE}" {
+      0
      }
      BaseCoverage 1
-     m_bIsWaterTight 1
     }
    }
   }
@@ -239,7 +240,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       Offset 0.9185 1.4921 2.135
       Angles 90 0 0
      }
-     m_fInitialFuelTankState 370
+     m_fInitialFuelTankState 285
      m_MaxFlowCapacityIn VEHICLE_MEDIUM
      m_iFuelTankID 3
     }
@@ -250,7 +251,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       Offset -0.9185 1.4921 2.135
       Angles 90 0 0
      }
-     m_fInitialFuelTankState 370
+     m_fInitialFuelTankState 285
      m_MaxFlowCapacityIn VEHICLE_MEDIUM
      m_iFuelTankID 4
     }
@@ -261,7 +262,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       Offset 1.6476 1.8401 -3.6944
       Angles 90 0 0
      }
-     m_fInitialFuelTankState 370
+     m_fInitialFuelTankState 285
      m_MaxFlowCapacityIn VEHICLE_MEDIUM
      m_iFuelTankID 2
     }
@@ -272,7 +273,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       Offset -1.6476 1.8401 -3.6944
       Angles 90 0 0
      }
-     m_fInitialFuelTankState 370
+     m_fInitialFuelTankState 285
      m_MaxFlowCapacityIn VEHICLE_MEDIUM
      m_iFuelTankID 5
     }
@@ -283,7 +284,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       Offset -1.6476 1.8401 -3.6944
       Angles 90 0 0
      }
-     m_fInitialFuelTankState 370
+     m_fInitialFuelTankState 285
      m_MaxFlowCapacityIn VEHICLE_MEDIUM
     }
    }
@@ -298,6 +299,60 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
     Angles 0 -90 0
    }
    m_fStartupTime 3.6
+  }
+  SCR_ResourceComponent "{618C754F56F05559}" {
+   m_aContainers {
+    SCR_ResourceContainer "{618C754F10C1F50B}" {
+     m_eResourceRights FACTION
+     m_eStorageType CARGO_VEHICLE
+     m_fResourceValueCurrent 0
+     m_fResourceValueMax 0
+     m_fResourceGain 0
+     m_fResourceGainTickrate 0
+     m_fResourceGainTimeout 0
+     m_fResourceDecay 0
+     m_fResourceDecayTickrate 0
+     m_fResourceDecayTimeout 0
+    }
+   }
+   m_aEncapsulators {
+    SCR_ResourceEncapsulator "{618C754F1E21643C}" {
+     m_sDebugName "Encapsulator - M1"
+     m_eResourceRights ALL
+     m_ContainerQueue SCR_ResourceEncapsulatorContainerQueue "{5DB8993B72033255}" : "{F214C17E1F29E70A}Configs/Resources/Supplies/ContainerQueues/Encapsulator/Queue_Encapsulator_Vehicle.conf" {
+     }
+     m_aActions {
+      SCR_ResourceEncapsulatorActionChangeDecay "{5DDCCC74435B0723}" {
+       m_fResourceDecay 0
+       m_fResourceDecayTickrate 0
+       m_fResourceDecayTimeout 0
+      }
+      SCR_ResourceEncapsulatorActionChangeGain "{5DDCCC744270881C}" {
+       m_fResourceGain 0
+       m_fResourceGainTickrate 0
+       m_fResourceGainTimeout 0
+      }
+      SCR_ResourceEncapsulatorActionChangeOnEmptyBehavior "{5DDCCC744543C226}" {
+       m_eOnEmptyBehavior HIDE
+      }
+      SCR_ResourceEncapsulatorActionChangeResourceValue "{5DDCCC74444F5586}" {
+       m_fResourceValueCurrent 0
+      }
+     }
+    }
+   }
+   m_aConsumers {
+    SCR_ResourceConsumer "{618C75408E008E24}" : "{4126DC9D9F44E513}Configs/Resources/Supplies/Consumers/Consumer_VehicleLoad.conf" {
+    }
+    SCR_ResourceConsumer "{618C754090EA9CDC}" : "{3FF0B8C036F14239}Configs/Resources/Supplies/Consumers/Consumer_VehicleUnload.conf" {
+    }
+   }
+   m_aGenerators {
+    SCR_ResourceGenerator "{618C75409A02D569}" : "{48782547A13061E2}Configs/Resources/Supplies/Generators/Generator_VehicleLoad.conf" {
+    }
+    SCR_ResourceGenerator "{618C7540991545C7}" : "{F8496BD9E1CE43B3}Configs/Resources/Supplies/Generators/Generator_VehicleUnload.conf" {
+    }
+   }
   }
   SCR_UniversalInventoryStorageComponent "{5E38B84FCEFF0E6D}" {
    Attributes SCR_ItemAttributeCollection "{5E38B84FCEFF0E6E}" {
@@ -485,7 +540,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
    }
    UnitType VehicleHeavy
   }
-  VehicleWheeledSimulation_SA "{731B26FCA2F19855}" {
+  VehicleWheeledSimulation "{731B26FCA2F19855}" {
    SignalsSourceAccess SignalsSourceAccessClass "{5E38B84FCEFFD707}" {
    }
    Simulation Wheeled "{5E38B84FCEFFD739}" {
@@ -1016,9 +1071,9 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
     }
    }
    additionalActions {
-    SCR_RepairAtSupportStationAction "{5E1CB6DF63753AD9}" {
-    }
     SCR_RefuelAtSupportStationAction "{5B02B547EDCF6F99}" {
+    }
+    SCR_RepairAtSupportStationAction "{5E1CB6DF63753AD9}" {
     }
     SCR_EngineAction "{5CC24B97EB96B5F6}" : "{FEEF05EC7DFE19F2}Prefabs/Vehicles/Core/Configs/Actions/EngineOnAction.conf" {
     }
