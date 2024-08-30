@@ -1,7 +1,7 @@
 GameProject {
- ID "M1A1Abrams-Fix"
- GUID "61BCA509CE0BDF89"
- TITLE "M1A1 Abrams Fix"
+ ID "M1A1Abrams"
+ GUID "5D1880C4AD410C14"
+ TITLE "M1A1 Abrams"
  Dependencies {
   "58D0FB3206B6F859" "5E389BB9F58B79A6"
  }
