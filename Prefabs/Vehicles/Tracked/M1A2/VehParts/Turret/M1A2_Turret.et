@@ -18,6 +18,7 @@ Turret : "{C06BC8C9F56F0AA1}Prefabs/Vehicles/Tracked/M1A1/VehParts/Turret/M1A1_T
       m_fZoomMax 50
       m_fStepZoomSize 5
      }
+     m_fReticleBaseZoom 3
     }
    }
   }
@@ -37,4 +38,5 @@ Turret : "{C06BC8C9F56F0AA1}Prefabs/Vehicles/Tracked/M1A1/VehParts/Turret/M1A1_T
    }
   }
  }
+ coords 1165.746 38 2837.211
 }

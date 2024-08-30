@@ -1,0 +1,25 @@
+TracerProjectile : "{67FED88E5085F63F}Prefabs/Weapons/Core/Ammo_Bullet_Base.et" {
+ ID "476AE74C1F2F140D"
+ components {
+  CollisionTriggerComponent "{5E66BB8C8CEF8091}" {
+   PROJECTILE_EFFECTS {
+    ExplosionEffect "{5E9E1AC777B2D8CC}" {
+     EffectPrefab "{6206E6F481DAE05D}Prefabs/Weapons/Warheads/Warhead_Spall_M829A1_Fix.et"
+    }
+   }
+  }
+  ShellMoveComponent "{851AA4A2AE0A5691}" {
+   ProjectileEffects {
+    ProjectileDamage "{6206E6F5354B6E79}" {
+     DamageValue 12
+     DamageType Incendiary
+     DamageEffects {
+      SCR_IncendiaryDamageEffect "{6206E6F7BB062795}" {
+      }
+     }
+    }
+   }
+  }
+ }
+ coords 1232.317 37.776 2852.421
+}

@@ -1,0 +1,13 @@
+TracerProjectile : "{5D7DDA86F9AC9505}Prefabs/Weapons/Ammo/Ammo_120mm_APFSDS-T_M829A1.et" {
+ ID "476AE74C1F2F140D"
+ components {
+  CollisionTriggerComponent "{5E66BB8C8CEF8091}" {
+   PROJECTILE_EFFECTS {
+    ExplosionEffect "{5E9E1AC777B2D8CC}" {
+     EffectPrefab "{7A06EF7B87599796}Prefabs/Weapons/Warheads/Warhead_Spall_M829A2_Fix.et"
+    }
+   }
+  }
+ }
+ coords 1231.886 37.783 2852.914
+}

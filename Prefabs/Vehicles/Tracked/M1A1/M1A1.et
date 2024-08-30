@@ -107,7 +107,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
   }
   BaseVehicleNodeComponent "{20FB66C5B2237133}" {
    components {
-    SCR_CarControllerComponent_SA "{20FB66C5BC92275B}" {
+    SCR_CarControllerComponent "{20FB66C5BC92275B}" {
      MaxStartupTime 1
      SteeringForwardSpeed +{
      }
@@ -158,12 +158,30 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
    AngularSleepingThreashold 0.5
   }
   SCR_BaseCompartmentManagerComponent "{20FB66C5DCB8DF72}" {
+   DoorInfoList {
+    CompartmentDoorInfo "{61F1193382A9C11A}" {
+     ContextName "driver_hatch"
+     Coverage 0.3
+     EntryPositionInfo PointInfo "{61F11933B7D9EFE6}" {
+      Offset 0 1.5369 4.2248
+      Angles 0 180 0
+     }
+     ExitPositionInfo PointInfo "{61F11933B6E482A9}" {
+      Offset 0 1.5369 2.8109
+     }
+     FakeDoor 1
+     AccessibilitySettings CompartmentAccessibilityContext "{61F11933A59B40ED}" {
+     }
+    }
+   }
    CompartmentSlots {
     PilotCompartmentSlot PilotCompartment {
      CompartmentAction SCR_GetInUserAction "{5086DB209BDE8253}" {
       ParentContextList {
        "DriverHatch"
       }
+     }
+     GetOutAction SCR_GetOutAction "{509D56667AFC4BD5}" {
      }
      SwitchSeatAction SCR_SwitchSeatAction "{509D56667885A8DC}" {
       ParentContextList {
@@ -173,7 +191,12 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
      AdditionalActions {
       SCR_RemoveCasualtyUserAction "{5D528254D8CE5491}" {
        ParentContextList {
-        "Driver_Idle" "DriverHatch"
+        "Driver_Idle"
+       }
+      }
+      SCR_RemoveCasualtyUserAction "{61089D5E93B44D65}" {
+       ParentContextList {
+        "DriverHatch"
        }
       }
      }
@@ -182,24 +205,13 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       Angles 20 0 0
      }
      DoorInfoList {
-      CompartmentDoorInfo "{50B8D5DDA17EB35D}" {
-       EntryPositionInfo PointInfo "{50B8D5DD213DC00C}" {
-        Offset 0 1.5369 4.2248
-        Angles 0 180 0
-       }
-       ExitPositionInfo PointInfo "{5E9C464EB116FC1E}" {
-        Offset 0 1.5369 2.8109
-       }
-       GetInTeleport 1
-       GetOutTeleport 1
-       EntryPositionAligning 0
-       SeatPositionAligning 0
-      }
-     }
-     AccessibilitySettings CompartmentAccessibilityContext "{5E9C464E9ABFE7DE}" {
+      0
      }
      BaseCoverage 1
      m_bIsWaterTight 1
+     m_DefaultOccupantData SCR_DefaultOccupantData "{61F1193369EEA619}" {
+      m_sDefaultOccupantPrefab "{26A9756790131354}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Rifleman.et"
+     }
     }
    }
   }
@@ -346,13 +358,19 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
     }
     MultiSlotConfiguration "{5E38B84FCEFFD71A}" {
      SlotTemplate InventoryStorageSlot Ammo {
-      Prefab "{AAF51CFA75A9CF8B}Prefabs/Weapons/Magazines/Box_762x51_M60_100rnd_4AP_1Tracer.et"
+      Prefab "{B0D52FDC9298FCF4}Prefabs/Weapons/Magazines/Box_762x51_M240_1200rnd_4AP_1Tracer.et"
      }
      NumSlots 5
     }
     MultiSlotConfiguration "{610770E3784993E0}" : "{D4D77296529174B9}Configs/Inventory/InventoryItem_Jerrycan.conf" {
     }
     MultiSlotConfiguration "{610770E37883AACD}" : "{3320B86FA03C5FE6}Configs/Inventory/InventoryItem_RepairKit.conf" {
+    }
+    MultiSlotConfiguration "{620B03355DC4D036}" {
+     SlotTemplate InventoryStorageSlot "{620B03355E01C6DE}" {
+      Prefab "{CC7F787C3ECF678F}Prefabs/Weapons/Magazines/Box_127x99_M2_100rnd_4Ball_1Tracer.et"
+     }
+     NumSlots 4
     }
    }
    m_fMaxWeight 700
@@ -485,7 +503,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
    }
    UnitType VehicleHeavy
   }
-  VehicleWheeledSimulation_SA "{731B26FCA2F19855}" {
+  VehicleWheeledSimulation "{731B26FCA2F19855}" {
    SignalsSourceAccess SignalsSourceAccessClass "{5E38B84FCEFFD707}" {
    }
    Simulation Wheeled "{5E38B84FCEFFD739}" {
@@ -1016,9 +1034,9 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
     }
    }
    additionalActions {
-    SCR_RepairAtSupportStationAction "{5E1CB6DF63753AD9}" {
-    }
     SCR_RefuelAtSupportStationAction "{5B02B547EDCF6F99}" {
+    }
+    SCR_RepairAtSupportStationAction "{5E1CB6DF63753AD9}" {
     }
     SCR_EngineAction "{5CC24B97EB96B5F6}" : "{FEEF05EC7DFE19F2}Prefabs/Vehicles/Core/Configs/Actions/EngineOnAction.conf" {
     }
@@ -1028,12 +1046,15 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
    AllowCrossHierarchy 1
   }
   VehicleAnimationComponent "{50B803EAA459B0AF}" {
+   AnimGraph "{E5D9CB02597071F5}Assets/Vehicles/Wheeled/BTR70/workspaces/BTR70.agr"
+   AnimInstance "{DAA855714EBFE43E}Prefabs/Vehicles/Core/Vehicles_Base_Empty.asi"
    AnimInjection AnimationAttachmentInfo "{50B803EA8AD25BC8}" {
     AnimGraph "{E5D9CB02597071F5}Assets/Vehicles/Wheeled/BTR70/workspaces/BTR70.agr"
     AnimInstance "{5F52A6DF918B0033}Assets/Vehicles/Wheeled/BTR70/workspaces/BTR_player.asi"
    }
   }
  }
+ coords 2304.622 66.28 1715.546
  m_eVehicleType TANK
  m_fTrackSpeed 0.005
 }

@@ -36,8 +36,20 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
    }
   }
   SCR_BaseCompartmentManagerComponent "{51ACFBB07A14CFA6}" {
+   DoorInfoList {
+    CompartmentDoorInfo "{6204D3BDCB578E79}" {
+     EntryPositionInfo PointInfo "{6204D3BDC50AF201}" {
+     }
+     ExitPositionInfo PointInfo "{6204D3BDC703732E}" {
+     }
+     GetInTeleport 1
+     GetOutTeleport 1
+     FakeDoor 1
+    }
+   }
    CompartmentSlots {
     TurretCompartmentSlot TurretCompartment {
+     CompartmentUniqueName "Commander"
      CompartmentAction SCR_GetInUserAction "{5086CC2CFDD3A05A}" {
       ParentContextList {
        "CommanderHatch"
@@ -51,30 +63,25 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
      AdditionalActions {
       SCR_RemoveCasualtyUserAction "{5D56867A46DBE769}" {
        ParentContextList {
-        "gunner" "door_l01" "door_r01"
+        "Commander"
+       }
+      }
+      SCR_RemoveCasualtyUserAction "{61089D59F48D7BD2}" {
+       ParentContextList {
+        "CommanderHatch"
        }
       }
      }
      PassengerPositionInfo EntitySlotInfo "{B1CB25848A3D93A8}" {
       PivotID "v_Commander_idle"
+      Offset 0 0 -0.05
      }
      SeatType 3
      DoorInfoList {
-      CompartmentDoorInfo "{50B917CA9C90BD91}" : "{F07C025E13E6EC07}Prefabs/Vehicles/Tracked/M1A1/Configs/CommanderHatch.conf" {
-      }
+      0
      }
-     UIInfo UIInfo "{50870A10DCCDED83}" {
+     UIInfo SCR_ActionUIInfo "{50870A10DCCDED83}" {
       Name "#AR-VehiclePosition_Commander"
-     }
-     AccessibilitySettings CompartmentAccessibilityContext "{5956EED3CC9A2F3E}" : "{E778E709DFC79857}Prefabs/Vehicles/Wheeled/BTR70/CompartmentAccess_BTR70.conf" {
-     }
-     BaseCoverage 1
-     CanOccupantEquipGadget 1
-     RestrictedItemTypes +{
-     }
-     m_bIsWaterTight 1
-     m_DefaultOccupantData SCR_DefaultOccupantData "{5E9E15D982250F19}" {
-      m_sDefaultOccupantPrefab "{26A9756790131354}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Rifleman.et"
      }
     }
    }
@@ -154,7 +161,6 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
      }
      ADSTime 0
      CameraRecoilAmount 0
-     m_sLayoutResource "{4CE66FA8219D33D7}UI/layouts/Sights/Optic_Default.layout"
      m_sReticleTexture "{AE1DBD2308EDFF54}UI/Textures/Sights/ARTII/ARTII_UI.edds"
      m_sReticleGlowTexture "{8223211281E0B381}UI/Textures/Sights/ARTII/ARTII-glow_UI.edds"
      m_bHasIllumination 1
@@ -163,7 +169,6 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
      m_fReticleAngularSize 3.6
      m_fReticlePortion 0.53711
      m_fReticleBaseZoom 2.6
-     m_bIsTurretOptic 1
      m_fObjectiveFov 23
      m_fObjectiveScale 0.77
      m_fVignetteScale 0.847
@@ -171,9 +176,6 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
      m_fMovementDampingSpeed 8
      m_fVignetteMoveSpeed 16
      m_fMotionBlurScale 0
-     m_fRecoilScaleMax 1
-     m_fRecoilTranslationTarget 0.001
-     m_fRecoilScaleTranslation 1
     }
    }
    SignalsSourceAccess SignalsSourceAccessClass "{5E9E15D982250F2F}" {
@@ -215,7 +217,7 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
      Radius 0.4
     }
     UserActionContext "{5E9E15D98224C3E4}" {
-     ContextName "CommanderHatch"
+     ContextName "CommanderHatch2"
      Position PointInfo "{5E9E15D98224C3E5}" {
       PivotID "v_turret_01"
       Offset 0.5271 1.153 -0.5761
@@ -234,14 +236,15 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
    }
   }
   VehicleAnimationComponent "{5E9E15D98224C398}" {
-   AnimGraph "{66618A6A119CAD93}Assets/Vehicles/Wheeled/workspaces/Vehicles_Wheeled_Graph.agr"
+   AnimGraph "{E5D9CB02597071F5}Assets/Vehicles/Wheeled/BTR70/workspaces/BTR70.agr"
    AnimInstance "{DAA855714EBFE43E}Prefabs/Vehicles/Core/Vehicles_Base_Empty.asi"
    AnimInjection AnimationAttachmentInfo "{5E9E15D98224C399}" {
-    AnimGraph "{66618A6A119CAD93}Assets/Vehicles/Wheeled/workspaces/Vehicles_Wheeled_Graph.agr"
-    AnimInstance "{C1CCA4C15DEF005F}Assets/Vehicles/Wheeled/workspaces/Player_Wheeled_M998.asi"
+    AnimGraph "{E5D9CB02597071F5}Assets/Vehicles/Wheeled/BTR70/workspaces/BTR70.agr"
+    AnimInstance "{5F52A6DF918B0033}Assets/Vehicles/Wheeled/BTR70/workspaces/BTR_player.asi"
     BindingName "Vehicle"
    }
    AutoVariablesBind 1
   }
  }
+ coords 1170.163 38 2829.69
 }

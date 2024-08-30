@@ -11,10 +11,12 @@ GenericEntity : "{316CBF0FCF276778}Prefabs/Weapons/Magazines/Canister_120mm_M1A1
   MagazineComponent "{CA6BE4D6B4DAFD69}" {
    UIInfo MagazineUIInfo "{57126733AA401586}" {
     Name "120mm APFSDS M829A2"
+    m_sAmmoType "M829A2 APFSDS"
    }
    AmmoMapping {
-    4
+    4 4
    }
   }
  }
+ coords 97.412 0 1236.575
 }
