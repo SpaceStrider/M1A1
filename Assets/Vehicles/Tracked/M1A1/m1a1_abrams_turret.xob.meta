@@ -62,7 +62,6 @@ MetaFileClass {
      Margin 0
     }
     GeometryParam UTM_A1turret {
-     LayerPreset "FireView"
      SurfaceProperties {
       "{18C62B7F4A626E3B}Common/Materials/Game/Armor/armor_5mm.gamemat"
       "{E3BA823837CA9885}Common/Materials/Game/Armor/armor_350mm.gamemat"

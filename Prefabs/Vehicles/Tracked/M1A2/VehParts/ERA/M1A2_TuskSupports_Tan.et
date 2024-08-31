@@ -59,9 +59,6 @@ GenericEntity : "{A958A61D3FAEBC41}Prefabs/Vehicles/Tracked/M1A2/VehParts/ERA/M1
     RegisteringComponentSlotInfo ERA_R08 {
      Prefab "{811AFB0216B220C4}Prefabs/Vehicles/Core/ERA/ARAT/Tan/ARAT_R08_Tan.et"
     }
-    RegisteringComponentSlotInfo ERA_01 {
-     Prefab "{95502556FE474A4D}Prefabs/Vehicles/Core/ERA/ARAT/ARAT_Tan.et"
-    }
    }
   }
  }

@@ -42,22 +42,6 @@ MetaFileClass {
    }
    MergeTriMeshes 0
    GeometryParams {
-    GeometryParam UTM_A1Hull {
-     LayerPreset "FireView"
-     SurfaceProperties {
-      "{A72820E3ABCD79FC}Common/Materials/Game/Armor/armor_30mm.gamemat"
-      "{08A1668B0FD73D18}Common/Materials/Game/Armor/armor_60mm_Chemresist.gamemat"
-      "{F7BBA3F8433598B6}Common/Materials/Game/Armor/armor_6mm.gamemat"
-      "{18C62B7F4A626E3B}Common/Materials/Game/Armor/armor_5mm.gamemat"
-      "{33CE4B76B338E44F}Common/Materials/Game/Armor/armor_20mm.gamemat"
-      "{8E8A10341B3BF250}Common/Materials/Game/Armor/armor_40mm.gamemat"
-      "{20A346E426609AD6}Common/Materials/Game/Armor/armor_60mm.gamemat"
-      "{E3BA823837CA9885}Common/Materials/Game/Armor/armor_350mm.gamemat"
-      "{08A1668B0FD73D18}Common/Materials/Game/Armor/armor_60mm_Chemresist.gamemat"
-     }
-     Mass 0
-     Margin 0
-    }
     GeometryParam UBX_Engine_01 {
      LayerPreset "FireGeo"
      SurfaceProperties {
@@ -310,6 +294,22 @@ MetaFileClass {
      LayerPreset "FireView"
      SurfaceProperties {
       "{A72820E3ABCD79FC}Common/Materials/Game/Armor/armor_30mm.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam UTM_A1Hull {
+     LayerPreset "FireView"
+     SurfaceProperties {
+      "{A72820E3ABCD79FC}Common/Materials/Game/Armor/armor_30mm.gamemat"
+      "{08A1668B0FD73D18}Common/Materials/Game/Armor/armor_60mm_Chemresist.gamemat"
+      "{F7BBA3F8433598B6}Common/Materials/Game/Armor/armor_6mm.gamemat"
+      "{18C62B7F4A626E3B}Common/Materials/Game/Armor/armor_5mm.gamemat"
+      "{33CE4B76B338E44F}Common/Materials/Game/Armor/armor_20mm.gamemat"
+      "{8E8A10341B3BF250}Common/Materials/Game/Armor/armor_40mm.gamemat"
+      "{20A346E426609AD6}Common/Materials/Game/Armor/armor_60mm.gamemat"
+      "{E3BA823837CA9885}Common/Materials/Game/Armor/armor_350mm.gamemat"
+      "{08A1668B0FD73D18}Common/Materials/Game/Armor/armor_60mm_Chemresist.gamemat"
      }
      Mass 0
      Margin 0

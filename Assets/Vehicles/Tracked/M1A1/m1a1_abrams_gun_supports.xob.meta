@@ -14,8 +14,9 @@ MetaFileClass {
    }
    GeometryParams {
     GeometryParam UTM_Cal50Barrel {
+     LayerPreset "FireView"
      SurfaceProperties {
-      "{48E4C9397C173922}m1a1_abrams_era.gamemat"
+      "{1950188BB10D20EA}Common/Materials/Game/Metal/metal_5mm.gamemat"
      }
      Mass 0
      Margin 0
@@ -39,6 +40,8 @@ MetaFileClass {
   FBXResourceClass HEADLESS : PC {
    Common TXOCommonClass "{60648DD345A6CEB0}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
    }
+  }
+  FBXResourceClass PS5 : PC {
   }
  }
 }

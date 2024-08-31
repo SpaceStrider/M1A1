@@ -111,6 +111,14 @@ MetaFileClass {
      Mass 0
      Margin 0
     }
+    GeometryParam UCX_Hull_01 {
+     LayerPreset "Vehicle"
+     SurfaceProperties {
+      "{D3A4A761377F28DE}Common/Materials/Game/VehicleParts/vehicle_body.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
     GeometryParam UCX_Turret_01 {
      LayerPreset "Vehicle"
      SurfaceProperties {
@@ -418,7 +426,13 @@ MetaFileClass {
     GeometryParam UTM_Hull {
      LayerPreset "FireView"
      SurfaceProperties {
-      "{5F9012D836479B1A}Common/Materials/Game/Armor/armor_10mm.gamemat" "{A72820E3ABCD79FC}Common/Materials/Game/Armor/armor_30mm.gamemat" "{E3BA823837CA9885}Common/Materials/Game/Armor/armor_150mm.gamemat" "{08A1668B0FD73D18}Common/Materials/Game/Armor/armor_60mm.gamemat" "{F7BBA3F8433598B6}Common/Materials/Game/Armor/armor_6mm.gamemat" "{18C62B7F4A626E3B}Common/Materials/Game/Armor/armor_5mm.gamemat" "{33CE4B76B338E44F}Common/Materials/Game/Armor/armor_20mm.gamemat"
+      "{5F9012D836479B1A}Common/Materials/Game/Armor/armor_10mm.gamemat"
+      "{A72820E3ABCD79FC}Common/Materials/Game/Armor/armor_30mm.gamemat"
+      "{E3BA823837CA9885}Common/Materials/Game/Armor/armor_350mm.gamemat"
+      "{08A1668B0FD73D18}Common/Materials/Game/Armor/armor_60mm_Chemresist.gamemat"
+      "{F7BBA3F8433598B6}Common/Materials/Game/Armor/armor_6mm.gamemat"
+      "{18C62B7F4A626E3B}Common/Materials/Game/Armor/armor_5mm.gamemat"
+      "{33CE4B76B338E44F}Common/Materials/Game/Armor/armor_20mm.gamemat"
      }
      Mass 0
      Margin 0
@@ -442,15 +456,8 @@ MetaFileClass {
     GeometryParam UTM_turret {
      LayerPreset "FireView"
      SurfaceProperties {
-      "{5824DB4DA1A28E22}Common/Materials/Game/Armor/armor_100mm.gamemat" "{469B8DA92D8109EC}Common/Materials/Game/Metal/metal_10mm_min.gamemat"
-     }
-     Mass 0
-     Margin 0
-    }
-    GeometryParam UCX_Hull_01 {
-     LayerPreset "Vehicle"
-     SurfaceProperties {
-      "{D3A4A761377F28DE}Common/Materials/Game/VehicleParts/vehicle_body.gamemat"
+      "{5824DB4DA1A28E22}Common/Materials/Game/Armor/armor_100mm.gamemat"
+      "{469B8DA92D8109EC}Common/Materials/Game/Metal/metal_10mm_min.gamemat"
      }
      Mass 0
      Margin 0
@@ -474,6 +481,8 @@ MetaFileClass {
   FBXResourceClass HEADLESS : PC {
    Common TXOCommonClass "{5D2062C9E4A09206}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
    }
+  }
+  FBXResourceClass PS5 : PC {
   }
  }
 }
