@@ -1,4 +1,5 @@
 MatPBRBasic {
+ Color 0.138 0.138 0.138 1
  Emissive 1 0.042 0.042 0
  EmissiveLV 5
  BCRMap "{B1F5D25766BE057C}Assets/Vehicles/Tracked/M1A1/data/Textures/m1a1_abrams_BCR.edds"

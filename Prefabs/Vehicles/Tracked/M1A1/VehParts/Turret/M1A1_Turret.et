@@ -36,7 +36,7 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
      BoneNames {
       "v_turret_01" "v_gun_01"
      }
-     SimulationDistance 1000
+     SimulationDistance 4000
      AlwaysSimulateOwner 1
     }
    }
@@ -95,13 +95,14 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
       }
       SCR_RemoveCasualtyUserAction "{61089D59F48D7BD2}" {
        ParentContextList {
-        "CommanderHatch"
+        "CommanderHatch" "LoaderHatch"
        }
       }
      }
      PassengerPositionInfo EntitySlotInfo "{B1CB25848A3D93A8}" {
       PivotID "v_Gunner_idle"
      }
+     SkipCharacterDoorAnimationsFromSeat 1
      SeatType 1
      DoorInfoList {
       0
@@ -136,7 +137,7 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
       }
       SCR_RemoveCasualtyUserAction "{61089D5E00C44348}" {
        ParentContextList {
-        "LoaderHatch"
+        "CommanderHatch" "LoaderHatch"
        }
       }
      }
@@ -158,9 +159,14 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
   }
   SCR_BaseHUDComponent "{51ACD09C5E194510}" {
    InfoDisplays {
-    SCR_WeaponSelectionMenu "{605256B503B9FDF8}" {
+    SCR_WeaponInfoVehicle "{5194B831C2F89FB5}" {
+     m_aHandlers {
+      SCR_InfoDisplaySlotHandler "{5D6280171AA85972}" {
+      }
+     }
+    }
+    SCR_WeaponSelectionMenu "{618C754D5591F89F}" {
      m_LayoutPath "{2180D62E7C6F0DFC}UI/layouts/HUD/WeaponSelection/WeaponSelectionMenu.layout"
-     m_ColorSelected 1 1 1 0.1
     }
    }
   }
@@ -226,6 +232,7 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
    }
   }
   SCR_UniversalInventoryStorageComponent "{5DA6316998928BD1}" {
+   Enabled 0
    Attributes SCR_ItemAttributeCollection "{5DA6316963377485}" {
     ItemDisplayName UIInfo "{5DA6316960811947}" {
      Name "#AR-Inventory_Turret"
@@ -307,10 +314,6 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
    LimitsVert -10 20
    AimingMaxSpeed 1 0.8
    AimingSpeedControls 0.1 0.1
-   CameraAdsAttachment PointInfo "{5E5C42F3828D3681}" {
-    PivotID "v_gun_01"
-    Offset 0.23 0.5 0.3
-   }
    TurretSpeed 40 25
    TurretAcceleration 40 25
    TurretDeceleration 80 60
@@ -328,6 +331,7 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
      RegisterActions 1
      RegisterDamage 1
      RegisterControllers 1
+     RegisterWeapons 1
      RegisterCompartments 1
     }
    }
@@ -351,7 +355,7 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
    shouldHandleObstruction 0
    AttachType InventoryStorageSlot "{0AACE7470E421D82}" {
     PivotID "v_gun_01"
-    Offset 0.2253 0.0018 -0.1794
+    Offset 0.2253 0.0061 -0.2442
     DisablePhysicsInteraction 1
    }
    WeaponTemplate "{326FBEC7D3AE22EC}Prefabs/Weapons/MachineGuns/M60/MG_M240C_Mounted.et"
@@ -424,10 +428,9 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
    }
    AllowCrossHierarchy 1
   }
-  BaseItemAnimationComponent "{5242E42C7B4B2CEE}" {
-   Enabled 0
-   AnimGraph "{E5D9CB02597071F5}Assets/Vehicles/Wheeled/BTR70/workspaces/BTR70.agr"
-   AnimInstance "{F2DBB12250B5F75A}Assets/Vehicles/Wheeled/BTR70/workspaces/BTR_vehicle.asi"
+  VehicleAnimationComponent "{5242E42C7B4B2CEE}" {
+   AnimGraph "{66618A6A119CAD93}Assets/Vehicles/Wheeled/workspaces/Vehicles_Wheeled_Graph.agr"
+   AnimInstance "{DAA855714EBFE43E}Prefabs/Vehicles/Core/Vehicles_Base_Empty.asi"
    AnimInjection AnimationAttachmentInfo "{5242E42C74AC2BF7}" {
     AnimGraph "{E5D9CB02597071F5}Assets/Vehicles/Wheeled/BTR70/workspaces/BTR70.agr"
     AnimInstance "{5F52A6DF918B0033}Assets/Vehicles/Wheeled/BTR70/workspaces/BTR_player.asi"
@@ -442,6 +445,7 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
     BindingName "Vehicle"
    }
    AutoVariablesBind 1
+   DeactivationDelay 0
   }
  }
  coords 1193.177 38 2821.912
