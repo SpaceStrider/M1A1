@@ -31,14 +31,14 @@ GenericEntity : "{D99AF37E07F32ECB}Prefabs/Weapons/Magazines/Box_762x54_PK_250rn
     Name "120mm HEATFS"
     Description ""
     m_sAmmoCaliber "120mm"
-    m_sAmmoType "HEATFS"
+    m_sAmmoType "M830 HEAT-FS"
     m_bShowAmmoTypeText 1
     m_eAmmoTypeFlags HEAT
    }
    MaxAmmo 1
    AmmoConfig "{381519E91845C864}Configs/Weapons/Ammo/Ammo_120mm_M1A1.conf"
    AmmoMapping {
-    0
+    0 0
    }
   }
   MeshObject "{CA6BE4D6A23F8EF0}" {
@@ -54,4 +54,5 @@ GenericEntity : "{D99AF37E07F32ECB}Prefabs/Weapons/Magazines/Box_762x54_PK_250rn
    }
   }
  }
+ coords 98.588 0 1235.809
 }

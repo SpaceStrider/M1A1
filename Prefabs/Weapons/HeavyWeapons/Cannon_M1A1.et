@@ -142,11 +142,7 @@ GenericEntity : "{F54F6C453A8CB478}Prefabs/Weapons/Core/MachineGun_Base.et" {
      MagazineTemplate "{316CBF0FCF276778}Prefabs/Weapons/Magazines/Canister_120mm_M1A1_APFSDS.et"
     }
     WeaponAnimationComponent "{60B4EA76EB15F6E0}" {
-     AnimGraph "{5C41727F96285D4E}Assets/Weapons/MachineGuns/workspaces/M249.agr"
-     AnimInstance "{E2DF83DEEE9355A1}Assets/Weapons/HeavyWeapons/workspaces/Cannon_weapon.asi"
-     AnimCommandsToBind {
-      "" ""
-     }
+     Enabled 0
     }
    }
    UIInfo WeaponUIInfo "{CC3BA6A2C42F09F4}" {
@@ -157,5 +153,5 @@ GenericEntity : "{F54F6C453A8CB478}Prefabs/Weapons/Core/MachineGun_Base.et" {
    WeaponSlotType "hmg"
   }
  }
- coords 2259.5 51.2 2160
+ coords 1186.789 38 2834.378
 }

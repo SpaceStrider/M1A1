@@ -28,6 +28,9 @@ GenericEntity : "{2D57DD5FB49350A2}Prefabs/Vehicles/Tracked/M1A2/VehParts/M1A2_E
 GenericEntity : "{2EA1049740ABC1CB}Prefabs/Vehicles/Tracked/M1A2/VehParts/ERA/M1A2_TuskIISupports.et" {
  coords 107.584 1 246.064
 }
+GenericEntity : "{2EDC92E303FE3FF7}Prefabs/Weapons/HeavyWeapons/Cannon_M1A1_Net.et" {
+ coords 63.337 1 223.151
+}
 $grp VehiclePartRotor : "{31CC44C2EDD743B7}Prefabs/Vehicles/Helicopters/UH1H/VehParts/Rotor/VehPart_UH1H_rotor_main.et" {
  {
   coords 49.444 1 203.865
@@ -184,6 +187,9 @@ GenericEntity : "{B7E5C0105B6525E4}Prefabs/Vehicles/Tracked/M1A2/VehParts/ERA/M1
 }
 GenericEntity : "{B9BB95A5F6594528}Prefabs/Weapons/Warheads/Warhead_Spall_3BM15.et" {
  coords 4.422 1 234.134
+}
+GenericEntity : "{B9FE7BE70E0FE8E0}Prefabs/Weapons/HeavyWeapons/M1A1_CamoNet_Cannon.et" {
+ coords 60.366 1 222.901
 }
 Turret : "{BC55E9E794C93DF0}Prefabs/Vehicles/Tracked/M1A2/VehParts/Turret/M1A2_Tusk_Turret.et" {
  coords 11.922 1 235.03
