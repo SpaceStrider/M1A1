@@ -436,17 +436,6 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
     AnimInstance "{5F52A6DF918B0033}Assets/Vehicles/Wheeled/BTR70/workspaces/BTR_player.asi"
    }
   }
-  VehicleAnimationComponent "{5D26251BB477A6D1}" {
-   AnimGraph "{E5D9CB02597071F5}Assets/Vehicles/Wheeled/BTR70/workspaces/BTR70.agr"
-   AnimInstance "{DAA855714EBFE43E}Prefabs/Vehicles/Core/Vehicles_Base_Empty.asi"
-   AnimInjection AnimationAttachmentInfo "{5D26251BB477A72E}" {
-    AnimGraph "{E5D9CB02597071F5}Assets/Vehicles/Wheeled/BTR70/workspaces/BTR70.agr"
-    AnimInstance "{5F52A6DF918B0033}Assets/Vehicles/Wheeled/BTR70/workspaces/BTR_player.asi"
-    BindingName "Vehicle"
-   }
-   AutoVariablesBind 1
-   DeactivationDelay 0
-  }
  }
  coords 1193.177 38 2821.912
 }

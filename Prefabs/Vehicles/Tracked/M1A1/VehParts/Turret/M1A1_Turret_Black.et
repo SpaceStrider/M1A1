@@ -23,9 +23,6 @@ Turret : "{C06BC8C9F56F0AA1}Prefabs/Vehicles/Tracked/M1A1/VehParts/Turret/M1A1_T
   WeaponSlotComponent "{51ACD09C6BFEEE6A}" {
    WeaponTemplate "{54722F528C2EA1ED}Prefabs/Weapons/HeavyWeapons/Cannon_M1A1_Black.et"
   }
-  WeaponSlotComponent "{5D26251BB4766644}" {
-   WeaponTemplate "{326FBEC7D3AE22EC}Prefabs/Weapons/MachineGuns/M60/MG_M240C_Mounted.et"
-  }
  }
  coords 1151.446 38 2821.294
 }
