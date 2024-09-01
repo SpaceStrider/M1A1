@@ -69,8 +69,13 @@ Turret : "{5C7634FA342E3528}Prefabs/Vehicles/Tracked/M1A1/VehParts/Turret/M1A1_T
 TracerProjectile : "{5D7DDA86F9AC9505}Prefabs/Weapons/Ammo/Ammo_120mm_APFSDS-T_M829A1.et" {
  coords 5.937 1 232.483
 }
-Turret : "{66596659FB0F645B}Prefabs/Vehicles/Wheeled/BTR70/VehParts/Turret/BTR70_Turret.et" {
- coords 62.999 1 223.908
+$grp Turret : "{66596659FB0F645B}Prefabs/Vehicles/Wheeled/BTR70/VehParts/Turret/BTR70_Turret.et" {
+ {
+  coords 62.999 1 223.908
+ }
+ {
+  coords 70.503 1 210.41
+ }
 }
 Vehicle UH1H1 : "{70BAEEFC2D3FEE64}Prefabs/Vehicles/Helicopters/UH1H/UH1H.et" {
  coords 142.799 1 232.895

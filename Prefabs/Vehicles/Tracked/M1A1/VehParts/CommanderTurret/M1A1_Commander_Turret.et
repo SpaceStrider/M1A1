@@ -216,24 +216,26 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
      }
      Radius 0.4
     }
-    UserActionContext "{5E9E15D98224C3E4}" {
-     ContextName "CommanderHatch"
-     Position PointInfo "{5E9E15D98224C3E5}" {
-      PivotID "v_turret_01"
-      Offset 0.5271 1.153 -0.5761
-     }
-    }
    }
    AllowCrossHierarchy 1
   }
   BaseItemAnimationComponent "{5242E42C7B4B2CEE}" {
    Enabled 0
    AnimGraph "{E5D9CB02597071F5}Assets/Vehicles/Wheeled/BTR70/workspaces/BTR70.agr"
-   AnimInstance "{F2DBB12250B5F75A}Assets/Vehicles/Wheeled/BTR70/workspaces/BTR_vehicle.asi"
+   AnimInstance "{DAA855714EBFE43E}Prefabs/Vehicles/Core/Vehicles_Base_Empty.asi"
    AnimInjection AnimationAttachmentInfo "{5242E42C74AC2BF7}" {
     AnimGraph "{E5D9CB02597071F5}Assets/Vehicles/Wheeled/BTR70/workspaces/BTR70.agr"
     AnimInstance "{5F52A6DF918B0033}Assets/Vehicles/Wheeled/BTR70/workspaces/BTR_player.asi"
    }
+   AutoCommandBind 1
+   AnimCommandsToBind {
+    ""
+   }
+   AutoVariablesBind 1
+   AnimVariablesToBind {
+    ""
+   }
+   DeactivationDelay 2
   }
   VehicleAnimationComponent "{5E9E15D98224C398}" {
    AnimGraph "{E5D9CB02597071F5}Assets/Vehicles/Wheeled/BTR70/workspaces/BTR70.agr"
@@ -243,7 +245,14 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
     AnimInstance "{5F52A6DF918B0033}Assets/Vehicles/Wheeled/BTR70/workspaces/BTR_player.asi"
     BindingName "Vehicle"
    }
+   AnimCommandsToBind {
+    ""
+   }
    AutoVariablesBind 1
+   AnimVariablesToBind {
+    ""
+   }
+   DeactivationDelay 2
   }
  }
 }
