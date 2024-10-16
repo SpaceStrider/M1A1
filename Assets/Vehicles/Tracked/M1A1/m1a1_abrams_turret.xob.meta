@@ -48,7 +48,7 @@ MetaFileClass {
     GeometryParam UCX_A1_turret_cannon {
      LayerPreset "FireView"
      SurfaceProperties {
-      "{08A1668B0FD73D18}Common/Materials/Game/Armor/armor_60mm_Chemresist.gamemat"
+      "{08A1668B0FD73D18}Common/Materials/Game/Armor/armor_60mm_Chemresist_abrams.gamemat"
      }
      Mass 0
      Margin 0
@@ -62,9 +62,10 @@ MetaFileClass {
      Margin 0
     }
     GeometryParam UTM_A1turret {
+     LayerPreset "FireView"
      SurfaceProperties {
       "{18C62B7F4A626E3B}Common/Materials/Game/Armor/armor_5mm.gamemat"
-      "{E3BA823837CA9885}Common/Materials/Game/Armor/armor_350mm.gamemat"
+      "{E3BA823837CA9885}Common/Materials/Game/Armor/armor_350mm_abrams.gamemat"
       "{33CE4B76B338E44F}Common/Materials/Game/Armor/armor_20mm.gamemat"
       "{A72820E3ABCD79FC}Common/Materials/Game/Armor/armor_30mm.gamemat"
       "{8E8A10341B3BF250}Common/Materials/Game/Armor/armor_40mm.gamemat"

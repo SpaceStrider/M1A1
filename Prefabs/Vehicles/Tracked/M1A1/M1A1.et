@@ -1012,6 +1012,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
     RegisteringComponentSlotInfo Turret {
      MergePhysics 1
      Prefab "{C06BC8C9F56F0AA1}Prefabs/Vehicles/Tracked/M1A1/VehParts/Turret/M1A1_Turret.et"
+     DisablePhysicsInteraction 1
      RegisterActions 1
      RegisterDamage 1
      RegisterControllers 1
@@ -1026,6 +1027,8 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
     RAM_TriplexEntitySlotInfo Periscope_01 : "{F0DA13614A851917}Prefabs/Props/Core/Periscope_base.conf" {
      Offset 0 1.3807 2.4312
      MergePhysics 1
+     DisablePhysicsInteraction 1
+     RegisterActions 1
      m_CameraPointInfo RAM_CustomCameraPointInfo "{611648FB84A51CB4}" {
       Offset 0.0283 1.5317 2.288
      }
@@ -1034,6 +1037,8 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
      Offset -0.1973 1.3807 2.3876
      Angles 0 -30 0
      MergePhysics 1
+     DisablePhysicsInteraction 1
+     RegisterActions 1
      m_CameraPointInfo RAM_CustomCameraPointInfo "{611648FB84A51CB4}" {
       Offset -0.2144 1.5225 2.2979
       Angles 0 -35 0
@@ -1043,6 +1048,8 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
      Offset 0.1883 1.3807 2.3905
      Angles 0 30 0
      MergePhysics 1
+     DisablePhysicsInteraction 1
+     RegisterActions 1
      m_CameraPointInfo RAM_CustomCameraPointInfo "{611648FB84A51CB4}" {
       Offset 0.2563 1.5225 2.2857
       Angles 0 35 0
