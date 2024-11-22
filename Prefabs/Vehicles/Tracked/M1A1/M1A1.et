@@ -307,8 +307,8 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
    ThrustSignal "engineThrust"
    MaxRPM 5000
    EffectPosition EntitySlotInfo s {
-    Offset 1.5648 1.333 -2.6243
-    Angles 0 -90 0
+    Offset 0.1386 1.161 -4.2517
+    Angles 0 180 0
    }
    m_fStartupTime 3.6
   }
@@ -1007,12 +1007,14 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
     }
    }
   }
+  WCS_Armament_GroundVehicleInfraredEmitterComponent "{62B0B51C54CF7AA5}" {
+   m_vPosition 0 1.15 -4.253
+  }
   SlotManagerComponent "{55BCE45E438E4CFF}" {
    Slots {
     RegisteringComponentSlotInfo Turret {
      MergePhysics 1
      Prefab "{C06BC8C9F56F0AA1}Prefabs/Vehicles/Tracked/M1A1/VehParts/Turret/M1A1_Turret.et"
-     DisablePhysicsInteraction 1
      RegisterActions 1
      RegisterDamage 1
      RegisterControllers 1
