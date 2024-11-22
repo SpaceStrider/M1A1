@@ -179,6 +179,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
    }
    CompartmentSlots {
     PilotCompartmentSlot PilotCompartment {
+     CompartmentUniqueName "driver"
      CompartmentAction SCR_GetInUserAction "{5086DB209BDE8253}" {
       ParentContextList {
        "DriverHatch"
@@ -216,6 +217,27 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
      m_DefaultOccupantData SCR_DefaultOccupantData "{61F1193369EEA619}" {
       m_sDefaultOccupantPrefab "{26A9756790131354}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Rifleman.et"
      }
+    }
+   }
+  }
+  SCR_BaseHUDComponent "{62EC37E8A66D0C39}" {
+   InfoDisplays {
+    SCR_WeaponInfoVehicle "{62EC37E8AAD47CE8}" {
+     m_bIsEnabled 0
+    }
+    SCR_WeaponSelectionMenu "{62EC37E89C1208DE}" {
+     m_LayoutPath "{2180D62E7C6F0DFC}UI/layouts/HUD/WeaponSelection/WeaponSelectionMenu.layout"
+     m_ColorSelected 1 1 1 0.1
+    }
+    WCS_Armament_WeaponInfoVehicle "{62EC37E8875F0A12}" {
+     m_LayoutPath "{2E427134219C809E}UI/layouts/HUD/WeaponInfo/WCS_WeaponInfo.layout"
+     m_aHandlers {
+      SCR_InfoDisplaySlotHandler "{5D6280171AA85972}" {
+       m_bCanUpdate 1
+       m_sSlotName "Slot_WeaponInfo"
+      }
+     }
+     m_sInterfaceSettingName "m_bShowWeaponInfo"
     }
    }
   }
@@ -1022,14 +1044,33 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
     }
    }
   }
+  WCS_Armament_ContinuousSmokeDispenser "{62EC37E863E3939D}" {
+   m_aActionEnabledCompartments {
+    "driver"
+   }
+   m_Particle "{D9E301D28125234A}Particles/Weapon/Smoke_grenade_AN-M8_HC.ptc"
+   m_vParticlePosition 0.054 1.437 -4.214
+   m_iDurationSeconds 30
+  }
+  WCS_Armament_DispenserManagerComponent "{62EC37E8714A202D}" {
+  }
   WCS_Armament_GroundVehicleInfraredEmitterComponent "{62B0B51C54CF7AA5}" {
    m_vPosition 0 1.15 -4.253
+  }
+  WCS_Armament_VehicleCameraComponent "{62EC37E80FD144AF}" {
+   m_Cameras {
+    WCS_VehicleCameraProps "{62EC37EF1EE85EFA}" {
+     m_vCameraPosition 0 1.547 2.584
+     m_fSmoothingTranslationSpeed 0
+     m_sId "camera_1"
+    }
+   }
   }
   SlotManagerComponent "{55BCE45E438E4CFF}" {
    Slots {
     RegisteringComponentSlotInfo Turret {
-     MergePhysics 1
      Prefab "{C06BC8C9F56F0AA1}Prefabs/Vehicles/Tracked/M1A1/VehParts/Turret/M1A1_Turret.et"
+     DisablePhysicsInteraction 1
      RegisterActions 1
      RegisterDamage 1
      RegisterControllers 1
@@ -1062,6 +1103,14 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       Offset 0 1.5098 2.673
      }
     }
+    UserActionContext "{62EC37EFF97E12AF}" {
+     ContextName "DriverHatch_int"
+     Position PointInfo "{62EC37EFF97E1263}" {
+      Offset 0 1.2486 2.673
+      Angles -8.1303 -180 0
+     }
+     Omnidirectional 0
+    }
     UserActionContext "{5E38B84FCEFC1914}" {
      ContextName "light_switch"
      Position PointInfo "{5E38B84FCEFC1916}" {
@@ -1089,6 +1138,19 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
     SCR_EngineAction "{5CC24B97EB96B5F6}" : "{FEEF05EC7DFE19F2}Prefabs/Vehicles/Core/Configs/Actions/EngineOnAction.conf" {
     }
     SCR_EngineAction "{5CC24B97F43FBDEB}" : "{B67160046438840C}Prefabs/Vehicles/Core/Configs/Actions/EngineOffAction.conf" {
+    }
+    WCS_Armament_VehicleCameraAction "{62EC37EF6211DF47}" {
+     ParentContextList {
+      "DriverHatch_int"
+     }
+     UIInfo UIInfo "{62EC37EF8D5BF7B6}" {
+      Name "Periscope"
+     }
+     "Sort Priority" 1
+     m_sActionStateOn ""
+     m_sActionStateOff ""
+     m_bInteriorOnly 1
+     m_sCameraId "camera_1"
     }
    }
    AllowCrossHierarchy 1

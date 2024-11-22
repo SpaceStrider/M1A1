@@ -49,11 +49,12 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
    }
    CompartmentSlots {
     TurretCompartmentSlot TurretCompartment {
-     CompartmentUniqueName "Commander"
+     CompartmentUniqueName "commander"
      CompartmentAction SCR_GetInUserAction "{5086CC2CFDD3A05A}" {
       ParentContextList {
        "CommanderHatch"
       }
+      "Sort Priority" 2
      }
      SwitchSeatAction SCR_SwitchSeatAction "{509D566648F37562}" {
       ParentContextList {
@@ -74,24 +75,15 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
      }
      PassengerPositionInfo EntitySlotInfo "{B1CB25848A3D93A8}" {
       PivotID "v_Commander_idle"
-      Offset 0 0 -0.05
+      Offset 0 -0.1 -0.1
      }
-     SeatType 3
+     SeatType 2
      DoorInfoList {
       0
      }
      UIInfo SCR_ActionUIInfo "{50870A10DCCDED83}" {
       Name "#AR-VehiclePosition_Commander"
      }
-    }
-   }
-  }
-  SCR_BaseHUDComponent "{51ACD09C5E194510}" {
-   InfoDisplays {
-    SCR_WeaponInfoVehicle "{5194B831C2F89FB5}" {
-    }
-    SCR_WeaponSelectionMenu "{5E9E15D982250F1A}" {
-     m_LayoutPath "{2180D62E7C6F0DFC}UI/layouts/HUD/WeaponSelection/WeaponSelectionMenu.layout"
     }
    }
   }

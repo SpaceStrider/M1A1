@@ -74,7 +74,7 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
    }
    CompartmentSlots {
     TurretCompartmentSlot TurretCompartment {
-     CompartmentUniqueName "Gunner"
+     CompartmentUniqueName "gunner"
      CompartmentAction SCR_GetInUserAction "{5086CC2CFDD3A05A}" {
       ParentContextList {
        "CommanderHatch"
@@ -152,19 +152,6 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
      }
      m_ScreenShakeData SCR_BaseScreenShakeData "{6204D3BDB7E4CDAF}" {
      }
-    }
-   }
-  }
-  SCR_BaseHUDComponent "{51ACD09C5E194510}" {
-   InfoDisplays {
-    SCR_WeaponInfoVehicle "{5194B831C2F89FB5}" {
-     m_aHandlers {
-      SCR_InfoDisplaySlotHandler "{5D6280171AA85972}" {
-      }
-     }
-    }
-    SCR_WeaponSelectionMenu "{618C754D5591F89F}" {
-     m_LayoutPath "{2180D62E7C6F0DFC}UI/layouts/HUD/WeaponSelection/WeaponSelectionMenu.layout"
     }
    }
   }
@@ -330,14 +317,28 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
    Slots {
     RegisteringComponentSlotInfo Commander {
      PivotID "v_turret_02"
-     MergePhysics 1
      ChildPivotID "v_turret_02"
      Prefab "{772761F4454BABF4}Prefabs/Vehicles/Tracked/M1A1/VehParts/CommanderTurret/M1A1_Commander_Turret.et"
+     DisablePhysicsInteraction 1
      RegisterActions 1
      RegisterDamage 1
      RegisterControllers 1
      RegisterWeapons 1
      RegisterCompartments 1
+    }
+    WCS_Armament_DispenserSlotInfo Dispenser_R {
+     PivotID "v_turret_01"
+     Offset -1.4069 0.7085 0.1404
+     Angles 0 -12 0
+     MergePhysics 1
+     Prefab "{4B78B1A58AFF4F4F}Prefabs/Weapons/Countermeasures/Dispenser_Smoke_M1A1.et"
+    }
+    WCS_Armament_DispenserSlotInfo Dispenser_L {
+     PivotID "v_turret_01"
+     Offset 1.4069 0.7085 0.1404
+     Angles 0 12 0
+     MergePhysics 1
+     Prefab "{4B78B1A58AFF4F4F}Prefabs/Weapons/Countermeasures/Dispenser_Smoke_M1A1.et"
     }
    }
   }
