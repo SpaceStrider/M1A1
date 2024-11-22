@@ -368,21 +368,30 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
   }
   SCR_UniversalInventoryStorageComponent "{5E38B84FCEFF0E6D}" {
    Attributes SCR_ItemAttributeCollection "{5E38B84FCEFF0E6E}" {
-    ItemDisplayName UIInfo "{5E38B84FCEFF0E6F}" {
+    ItemDisplayName SCR_InventoryUIInfo "{5E38B84FCEFF0E6F}" {
      Name "#AR-Inventory_Trunk"
+     m_aItemHints {
+      SCR_SupplyStoredItemHintUIInfo "{5E72C5BB4BCFE2B6}" : "{1E7BDD22DCA4EA90}Configs/Inventory/ItemHints/VehicleSupplyStored_ItemHint.conf" {
+      }
+      SCR_SupplyMoveItemHintUIInfo "{5E72C5BB49707170}" : "{C78AD2189E57B6E7}Configs/Inventory/ItemHints/VehicleSupplyMove_ItemHint.conf" {
+      }
+     }
     }
     CustomAttributes {
-     PreviewRenderAttributes "{5E38B84FCEFF0E61}" {
-      CameraPreset Right
-      CameraDistanceToItem 7
-      IsDynamicObject 1
+     PreviewRenderAttributes "{62EC25F6C94CEDFF}" {
+      CameraOrbitAngles -15 -35 0
+      CameraDistanceToItem 9.5
+      CameraOffset -0.6 -1 0
+      FOV 40
+      AspectRatio 1
      }
-     SCR_InventoryVehicleVisibilityAttribute "{5E38B84FCEFF0E63}" {
+     SCR_InventoryVehicleVisibilityAttribute "{62EC25F5330A2384}" {
       m_bShowForVehicleFactionOnly 1
      }
     }
     m_Size SLOT_3x3
-    m_bDraggable 0
+    m_bDraggable 1
+    m_bStackable 0
    }
    UseCapacityCoefficient 0
    MaxCumulativeVolume 175000
