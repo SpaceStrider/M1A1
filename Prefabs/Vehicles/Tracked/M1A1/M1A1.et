@@ -11,6 +11,9 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
      Offset 0 1.3404 -3.52
      Angles 0 180 0
     }
+    SoundPointInfo FuelTank {
+     Offset 0 1.5117 -2.5843
+    }
    }
    Wheels {
     VehicleWheelSound Track_R {
@@ -887,14 +890,14 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
     }
     InertiaOverride 90000 100000 29500
     Aerodynamics Aerodynamics "{5E38B84FCEFFD727}" {
-     ReferenceArea 6
+     ReferenceArea 10
     }
     Pacejka Pacejka "{5CEA0545F9051D49}" : "{2E1044D5BFA6FB16}Prefabs/Vehicles/Core/Configs/PacejkaTire_Truck_Offroad.conf" {
     }
     RaycastLayer "VehicleCast"
     LiquidsLayers "Liquids"
     NoiseSteerSensitivity 0.5
-    RoughnessSensitivity 0.5
+    RoughnessSensitivity 0
    }
   }
   BaseFlattenGrassComponent "{55FCDD8048D3AE17}" {
