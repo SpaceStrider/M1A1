@@ -439,6 +439,9 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
    }
    m_fMaxWeight 700
   }
+  SCR_VehicleBuoyancyComponent "{5ECC936F0C77E390}" {
+   Buoyancy -0.5
+  }
   SCR_VehicleCameraDataComponent "{216DA82C75CDD94B}" {
    m_fHeight 1.5
    m_fDist_Max 6
