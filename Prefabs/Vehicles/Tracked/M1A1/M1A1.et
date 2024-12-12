@@ -120,20 +120,21 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
      SteeringCenterSpeed +{
      }
      ThrottleCurve {
-      2000 0.8 2500 0.5 3000 0
+      2080 0.8 2600 0.5 4000 0
      }
      ReverseCurve {
-      1500 0.8 2000 0.5 2500 0
+      1000 0.8 1250 0.5 1500 0
      }
-     ClutchUncoupleTime 0.01
-     ClutchCoupleTime 0.01
-     ClutchUncoupleRpm 1050
-     ClutchCoupleRpm 1450
+     ClutchUncoupleTime 0.5
+     ClutchCoupleTime 0.25
+     ClutchFeedbackRpm 1000
+     ClutchUncoupleRpm 1250
+     ClutchCoupleRpm 1510
      Latency 0.5
-     UpShiftFactor 0.3
-     UpShiftRpm 1250
-     DownShiftFactor 0.1
-     DownShiftRpm 1050
+     UpShiftFactor 1
+     UpShiftRpm 1380
+     DownShiftFactor 1
+     DownShiftRpm 1250
      TurboShiftFactor 1
     }
     SCR_BaseHUDComponent "{37C2676694790BC7}" {
@@ -601,16 +602,16 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
    }
    Simulation Wheeled "{5E38B84FCEFFD739}" {
     Engine Engine Engine {
-     Inertia 1
+     Inertia 4
      MaxPower 1120
      MaxTorque 3754
      RpmMaxPower 2100
-     RpmMaxTorque 1450
-     Steepness 40
-     Friction 290
+     RpmMaxTorque 1250
+     Steepness 80
+     Friction 400
      RpmIdle 600
-     RpmRedline 2500
-     RpmMax 3000
+     RpmRedline 2600
+     RpmMax 4000
      Output "Clutch"
     }
     Clutch Clutch Clutch {
@@ -619,7 +620,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
     }
     Gearbox Gearbox Gearbox {
      Forward {
-      6 4 2 1
+      14 8 4.17 2.21 1
      }
      Reverse 6
      Output "Diff_A"
