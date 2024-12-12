@@ -15,7 +15,7 @@ Tank : "{B47B16E8DB493898}Prefabs/Vehicles/Tracked/M1A1/M1A1.et" {
   }
   SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
    m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
-    m_Image "{D883B7DBEA6ACB6F}UI/Textures/EditorPreviews/Vehicles/Tracked/M1A1/M1A2Black.edds"
+    m_Image "{F2A790781C84AD40}UI/Textures/EditorPreviews/Vehicles/Tracked/M1A1/M1A1Black.edds"
    }
   }
   SlotManagerComponent "{55BCE45E438E4CFF}" {

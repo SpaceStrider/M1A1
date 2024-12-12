@@ -250,7 +250,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
     m_Image "{D32C1C4DB161288A}UI/Textures/EditorPreviews/Vehicles/Tracked/M1A1/M1A1Olive.edds"
     m_sFaction "US"
     m_aAuthoredLabels + {
-     20 21 54
+     20 21 54 1001
     }
     m_aAutoLabels {
      11 122
