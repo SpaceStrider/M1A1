@@ -1071,6 +1071,10 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
   WCS_Armament_VehicleCameraComponent "{62EC37E80FD144AF}" {
    m_Cameras {
     WCS_VehicleCameraProps "{62EC37EF1EE85EFA}" {
+     m_Position PointInfo "{63193011ABD59D94}" {
+      Offset 0.0222 1.533 2.3626
+     }
+     m_OverlayLayout "{A9758BBE1909FEFD}UI/layouts/Editor/Overlays/Vignettes/Vignette_VeryHeavy.layout"
      m_sId "camera_1"
     }
    }
