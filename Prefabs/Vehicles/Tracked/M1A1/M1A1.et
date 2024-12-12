@@ -3,7 +3,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
  components {
   SCR_VehicleSoundComponent "{55C2E66AD4EF2CA6}" {
    Filenames {
-    "{91E318F189F09E6F}Sounds/Vehicles/Wheeled/BTR70/Vehicles_BTR70_Animations.acp" "{46D80CA10FF8CA06}Sounds/Vehicles/Tracked/M1A1/Vehicles_M1A1_Engine.acp" "{B992B5065A62F9CA}Sounds/Vehicles/_SharedData/Crashes/APC/Vehicles_Crashes_APC.acp" "{F7D2EDE33E61A12A}Sounds/Vehicles/Wheeled/BTR70/Vehicles_BTR70_Dampers.acp" "{8880F08042E64B12}Sounds/Vehicles/Wheeled/BTR70/Vehicles_BTR70_Horn.acp" "{BA8A5BD290F5FB34}Sounds/Vehicles/_SharedData/Destruction/Vehicles_Destruction.acp" "{C6ED3AD60CF17B47}Sounds/Vehicles/Tracked/M1A1/Vehicles_M1A1_Rain.acp" "{E58AD1E99CBDA918}Sounds/Vehicles/Wheeled/BTR70/Vehicles_BTR70_Hatch.acp" "{F1030E91E4B33E24}Sounds/Vehicles/_SharedData/WaterInteractions/Vehicles_WaterInteractions.acp" "{9DD9C6279F4489B4}Sounds/SupportStations/SupportStations_Vehicles.acp" "{F41C3D53A2B69D85}Sounds/Vehicles/_SharedData/Destruction/Vehicles_Destruction_Fires.acp"
+    "{91E318F189F09E6F}Sounds/Vehicles/Wheeled/BTR70/Vehicles_BTR70_Animations.acp" "{46D80CA10FF8CA06}Sounds/Vehicles/Tracked/M1A1/Vehicles_M1A1_Engine.acp" "{B992B5065A62F9CA}Sounds/Vehicles/_SharedData/Crashes/APC/Vehicles_Crashes_APC.acp" "{7E27DE72CEE21395}Sounds/Vehicles/Wheeled/BTR70/Vehicles_M1A1_Dampers.acp" "{8880F08042E64B12}Sounds/Vehicles/Wheeled/BTR70/Vehicles_BTR70_Horn.acp" "{BA8A5BD290F5FB34}Sounds/Vehicles/_SharedData/Destruction/Vehicles_Destruction.acp" "{C6ED3AD60CF17B47}Sounds/Vehicles/Tracked/M1A1/Vehicles_M1A1_Rain.acp" "{E58AD1E99CBDA918}Sounds/Vehicles/Wheeled/BTR70/Vehicles_BTR70_Hatch.acp" "{F1030E91E4B33E24}Sounds/Vehicles/_SharedData/WaterInteractions/Vehicles_WaterInteractions.acp" "{9DD9C6279F4489B4}Sounds/SupportStations/SupportStations_Vehicles.acp" "{F41C3D53A2B69D85}Sounds/Vehicles/_SharedData/Destruction/Vehicles_Destruction_Fires.acp"
    }
    ScriptCallbacks 1
    SoundPoints {
@@ -157,7 +157,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
   }
   RigidBody "{51DAA09FECF52BBF}" {
    Mass 59400
-   CenterOfMass 0 1 0
+   CenterOfMass 0 1.2 0
    LinearSleepingThreashold 0.4
    AngularSleepingThreashold 0.5
   }
@@ -634,14 +634,12 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
      }
      Differential Diff_B {
       Type LSD
-      Ratio 1
       Strength 1
       Output0 "Diff_01_03"
       Output1 "Diff_02_04"
      }
      Differential Diff_C {
       Type LSD
-      Ratio 1
       Strength 1
       Output0 "Diff_05_07"
       Output1 "Diff_06_08"
@@ -676,42 +674,17 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
      }
     }
     Axles {
-     Axle "{5E38B84FCEFFD734}" {
-      TorqueShare 0.142
-      HasHandbrake 1
-      Differential Differential Diff_01 {
-       Ratio 6.8
-       Strength 1
-       Output0 "Wheel_L01"
-       Output1 "Wheel_R01"
-      }
-      Suspension Suspension "{4D8B26DFF8859A7B}" : "{3072E59BE51FD129}Prefabs/Vehicles/Tracked/M1A1/Configs/AbramsSuspensionLocked.conf" {
-       MaxSteeringAngle 35
-      }
-      Wheel Wheel "{5CB63E75C05DD829}" : "{BA0BD2CF170C28AC}Prefabs/Vehicles/Tracked/M1A1/Configs/AbramsWheel.conf" {
-      }
-      Tyre Tyre "{5CB63E75C1D1AE9F}" : "{D6D7AFEAECF18A52}Prefabs/Vehicles/Tracked/M1A1/Configs/VehicleSimulationTire_Abrams.conf" {
-      }
-      WheelPositions {
-       WheelPosition Wheel_L01 {
-        PivotID "v_wheel_l01"
-       }
-       WheelPosition Wheel_R01 {
-        PivotID "v_wheel_r01"
-       }
-      }
-     }
      Axle "{5E38B84FCEFFD72B}" {
-      TorqueShare 0.142
+      TorqueShare 0.15
       HasHandbrake 1
       Differential Differential Diff_02 {
-       Ratio 6.8
+       Ratio 8
        Strength 1
        Output0 "Wheel_L02"
        Output1 "Wheel_R02"
       }
-      Suspension Suspension "{4D8B26DF2B10AE05}" : "{C71E2DAA5BEAB0CE}Prefabs/Vehicles/Tracked/M1A1/Configs/AbramsSuspension.conf" {
-       MaxSteeringAngle 35
+      Suspension Suspension "{4D8B26DF2B10AE05}" : "{6B244DF7A54C1064}Prefabs/Vehicles/Tracked/M1A1/Configs/AbramsSuspensionHard.conf" {
+       MaxSteeringAngle 20
       }
       Wheel Wheel "{5CB63E75C3728451}" : "{BA0BD2CF170C28AC}Prefabs/Vehicles/Tracked/M1A1/Configs/AbramsWheel.conf" {
       }
@@ -727,17 +700,16 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
      }
      Axle "{5E38B84FCEFFD72D}" {
-      TorqueShare 0.142
+      TorqueShare 0.15
       HasHandbrake 1
       Differential Differential Diff_03 {
-       Ratio 6.8
+       Ratio 8
        Strength 1
        Output0 "Wheel_L03"
        Output1 "Wheel_R03"
       }
       Suspension Suspension "{5B3A8D44B1452858}" : "{C71E2DAA5BEAB0CE}Prefabs/Vehicles/Tracked/M1A1/Configs/AbramsSuspension.conf" {
-       MaxSteeringAngle 35
-       MaxTravelDown 0.11
+       MaxSteeringAngle 10
       }
       Wheel Wheel "{5CB63E75CEABD61F}" : "{BA0BD2CF170C28AC}Prefabs/Vehicles/Tracked/M1A1/Configs/AbramsWheel.conf" {
       }
@@ -753,16 +725,15 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
      }
      Axle "{5E38B84FCEFFD72E}" {
-      TorqueShare 0.142
+      TorqueShare 0.15
       HasHandbrake 1
       Differential Differential Diff_04 {
-       Ratio 6.8
+       Ratio 8
        Strength 1
        Output0 "Wheel_L04"
        Output1 "Wheel_R04"
       }
       Suspension Suspension "{5B3A8D44BDC38472}" : "{C71E2DAA5BEAB0CE}Prefabs/Vehicles/Tracked/M1A1/Configs/AbramsSuspension.conf" {
-       MaxTravelDown 0.13
       }
       Wheel Wheel "{5CB63E75CB21F1B9}" : "{BA0BD2CF170C28AC}Prefabs/Vehicles/Tracked/M1A1/Configs/AbramsWheel.conf" {
       }
@@ -778,16 +749,15 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
      }
      Axle "{5E38B84FCEFFD720}" {
-      TorqueShare 0.142
+      TorqueShare 0.15
       HasHandbrake 1
       Differential Differential Diff_05 {
-       Ratio 6.8
+       Ratio 8
        Strength 1
        Output0 "Wheel_L05"
        Output1 "Wheel_R05"
       }
       Suspension Suspension "{5B3A8D44B986A4EB}" : "{C71E2DAA5BEAB0CE}Prefabs/Vehicles/Tracked/M1A1/Configs/AbramsSuspension.conf" {
-       MaxTravelDown 0.15
       }
       Wheel Wheel "{5CB63E75D5F89198}" : "{BA0BD2CF170C28AC}Prefabs/Vehicles/Tracked/M1A1/Configs/AbramsWheel.conf" {
       }
@@ -803,16 +773,15 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
      }
      Axle "{5E38B84FCEFFD721}" {
-      TorqueShare 0.142
+      TorqueShare 0.15
       HasHandbrake 1
       Differential Differential Diff_06 {
-       Ratio 6.8
+       Ratio 8
        Strength 1
        Output0 "Wheel_L06"
        Output1 "Wheel_R06"
       }
       Suspension Suspension "{5B3A8D448659D92F}" : "{C71E2DAA5BEAB0CE}Prefabs/Vehicles/Tracked/M1A1/Configs/AbramsSuspension.conf" {
-       MaxTravelDown 0.13
       }
       Wheel Wheel "{5CB63E75D071A4F0}" : "{BA0BD2CF170C28AC}Prefabs/Vehicles/Tracked/M1A1/Configs/AbramsWheel.conf" {
       }
@@ -828,17 +797,16 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
      }
      Axle "{5E38B84FCEFFD722}" {
-      TorqueShare 0.142
+      TorqueShare 0.15
       HasHandbrake 1
       Differential Differential Diff_07 {
-       Ratio 6.8
+       Ratio 8
        Strength 1
        Output0 "Wheel_L07"
        Output1 "Wheel_R07"
       }
       Suspension Suspension "{5B3A8D44825ECF19}" : "{C71E2DAA5BEAB0CE}Prefabs/Vehicles/Tracked/M1A1/Configs/AbramsSuspension.conf" {
-       MaxSteeringAngle -35
-       MaxTravelDown 0.11
+       MaxSteeringAngle -10
       }
       Wheel Wheel "{5CB63E75D2E13AEA}" : "{BA0BD2CF170C28AC}Prefabs/Vehicles/Tracked/M1A1/Configs/AbramsWheel.conf" {
       }
@@ -854,16 +822,16 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
      }
      Axle "{5E38B84FCEFFD723}" {
-      TorqueShare 0.142
+      TorqueShare 0.15
       HasHandbrake 1
       Differential Differential Diff_08 {
-       Ratio 6.8
+       Ratio 8
        Strength 1
        Output0 "Wheel_L08"
        Output1 "Wheel_R08"
       }
       Suspension Suspension "{5B3A8D448D7BA280}" : "{C71E2DAA5BEAB0CE}Prefabs/Vehicles/Tracked/M1A1/Configs/AbramsSuspension.conf" {
-       MaxSteeringAngle -35
+       MaxSteeringAngle -20
       }
       Wheel Wheel "{5CB63E75DCEE0AF8}" : "{BA0BD2CF170C28AC}Prefabs/Vehicles/Tracked/M1A1/Configs/AbramsWheel.conf" {
       }
@@ -875,30 +843,6 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
        }
        WheelPosition Wheel_R08 {
         PivotID "v_wheel_r08"
-       }
-      }
-     }
-     Axle "{5E38B84FCEFFD725}" {
-      TorqueShare 0.142
-      Differential Differential Diff_09 {
-       Ratio 6.8
-       Strength 1
-       Output0 "Wheel_L09"
-       Output1 "Wheel_R09"
-      }
-      Suspension Suspension "{5D1880CF8FCE625A}" : "{3072E59BE51FD129}Prefabs/Vehicles/Tracked/M1A1/Configs/AbramsSuspensionLocked.conf" {
-       MaxSteeringAngle -35
-      }
-      Wheel Wheel "{5D1880CEFBDEBB45}" : "{BA0BD2CF170C28AC}Prefabs/Vehicles/Tracked/M1A1/Configs/AbramsWheel.conf" {
-      }
-      Tyre Tyre "{5D1880CF838466C0}" : "{D6D7AFEAECF18A52}Prefabs/Vehicles/Tracked/M1A1/Configs/VehicleSimulationTire_Abrams.conf" {
-      }
-      WheelPositions {
-       WheelPosition Wheel_L09 {
-        PivotID "v_wheel_l09"
-       }
-       WheelPosition Wheel_R09 {
-        PivotID "v_wheel_r09"
        }
       }
      }

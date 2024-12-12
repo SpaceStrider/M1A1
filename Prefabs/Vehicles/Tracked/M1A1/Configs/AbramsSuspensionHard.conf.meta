@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{53A31E9282D69EFA}Prefabs/Vehicles/Tracked/BMP3/AbramsTyre.conf"
+ Name "{6B244DF7A54C1064}Prefabs/Vehicles/Tracked/M1A1/Configs/AbramsSuspensionHard.conf"
  Configurations {
   CONFResourceClass PC {
   }
@@ -8,6 +8,8 @@ MetaFileClass {
   CONFResourceClass XBOX_SERIES : PC {
   }
   CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass PS5 : PC {
   }
   CONFResourceClass HEADLESS : PC {
   }
