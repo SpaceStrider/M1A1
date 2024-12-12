@@ -112,6 +112,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
    components {
     SCR_CarControllerComponent "{20FB66C5BC92275B}" {
      MaxStartupTime 1
+     TransmissionRND 1
      SteeringForwardSpeed +{
      }
      SteeringBackwardSpeed +{
@@ -124,9 +125,9 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
      ReverseCurve {
       1500 0.8 1800 0.5 2300 0
      }
-     ClutchUncoupleTime 0.1
-     ClutchCoupleTime 0.1
-     ClutchUncoupleRpm 900
+     ClutchUncoupleTime 0.01
+     ClutchCoupleTime 0.01
+     ClutchUncoupleRpm 1100
      ClutchCoupleRpm 1600
      Latency 1
      UpShiftFactor 0.7
@@ -600,14 +601,14 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
    }
    Simulation Wheeled "{5E38B84FCEFFD739}" {
     Engine Engine Engine {
-     Inertia 30
+     Inertia 1
      MaxPower 1120
      MaxTorque 3754
      RpmMaxPower 3000
      RpmMaxTorque 1000
      Steepness 80
      Friction 265
-     RpmIdle 600
+     RpmIdle 900
      RpmRedline 2800
      RpmMax 3100
      Output "Clutch"
@@ -676,7 +677,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
     }
     Axles {
      Axle "{5E38B84FCEFFD734}" {
-      TorqueShare 0.5
+      TorqueShare 0.15
       HasHandbrake 1
       Differential Differential Diff_01 {
        Type LSD
@@ -702,7 +703,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
      }
      Axle "{5E38B84FCEFFD72B}" {
-      TorqueShare 0.5
+      TorqueShare 0.15
       HasHandbrake 1
       Differential Differential Diff_02 {
        Type LSD
@@ -728,7 +729,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
      }
      Axle "{5E38B84FCEFFD72D}" {
-      TorqueShare 0.5
+      TorqueShare 0.15
       HasHandbrake 1
       Differential Differential Diff_03 {
        Type LSD
@@ -755,7 +756,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
      }
      Axle "{5E38B84FCEFFD72E}" {
-      TorqueShare 0.5
+      TorqueShare 0.15
       HasHandbrake 1
       Differential Differential Diff_04 {
        Type LSD
@@ -781,7 +782,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
      }
      Axle "{5E38B84FCEFFD720}" {
-      TorqueShare 0.5
+      TorqueShare 0.15
       HasHandbrake 1
       Differential Differential Diff_05 {
        Type LSD
@@ -807,7 +808,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
      }
      Axle "{5E38B84FCEFFD721}" {
-      TorqueShare 0.5
+      TorqueShare 0.15
       HasHandbrake 1
       Differential Differential Diff_06 {
        Type LSD
@@ -833,7 +834,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
      }
      Axle "{5E38B84FCEFFD722}" {
-      TorqueShare 0.5
+      TorqueShare 0.15
       HasHandbrake 1
       Differential Differential Diff_07 {
        Type LSD
@@ -860,7 +861,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
      }
      Axle "{5E38B84FCEFFD723}" {
-      TorqueShare 0.5
+      TorqueShare 0.15
       Differential Differential Diff_08 {
        Type LSD
        Ratio 6.8
@@ -885,7 +886,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
      }
      Axle "{5E38B84FCEFFD725}" {
-      TorqueShare 0.5
+      TorqueShare 0.15
       Differential Differential Diff_09 {
        Type LSD
        Ratio 6.8
@@ -1053,6 +1054,16 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
    m_iDurationSeconds 30
   }
   WCS_Armament_DispenserManagerComponent "{62EC37E8714A202D}" {
+   m_SmokeInfo WCS_Armament_DispenserSmokeInfo "{63155B3683F4FE7C}" {
+    m_aActionEnabledCompartments {
+     "driver"
+    }
+    m_FireModes {
+     WCS_Armament_DispenserRippleFireMode "{63155B36ED694C6C}" {
+      m_iNumShots 6
+     }
+    }
+   }
   }
   WCS_Armament_GroundVehicleInfraredEmitterComponent "{62B0B51C54CF7AA5}" {
    m_vPosition 0 1.15 -4.253
@@ -1060,8 +1071,6 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
   WCS_Armament_VehicleCameraComponent "{62EC37E80FD144AF}" {
    m_Cameras {
     WCS_VehicleCameraProps "{62EC37EF1EE85EFA}" {
-     m_vCameraPosition 0 1.547 2.584
-     m_fSmoothingTranslationSpeed 0
      m_sId "camera_1"
     }
    }

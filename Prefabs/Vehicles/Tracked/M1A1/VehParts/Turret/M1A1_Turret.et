@@ -307,6 +307,16 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
    BaseDeceleration 80
   }
   WCS_Armament_DispenserManagerComponent "{62EC25F0DEDC947D}" {
+   m_SmokeInfo WCS_Armament_DispenserSmokeInfo "{63155B355D17C9E7}" {
+    m_aActionEnabledCompartments {
+     "gunner"
+    }
+    m_FireModes {
+     WCS_Armament_DispenserRippleFireMode "{63155B3546CB8C88}" {
+      m_iNumShots 6
+     }
+    }
+   }
   }
   WCS_Armament_TurretStabilizationComponent "{62EC25FF3763180A}" {
    m_fHorizontalStabilizationSpeed 40
