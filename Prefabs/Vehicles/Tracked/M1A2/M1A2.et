@@ -10,6 +10,7 @@ Tank : "{B47B16E8DB493898}Prefabs/Vehicles/Tracked/M1A1/M1A1.et" {
   SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
    m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
     Name "#Abrams-EditableEntity_M1A2_Name"
+    m_Image "{F9083BEE478F4EA5}UI/Textures/EditorPreviews/Vehicles/Tracked/M1A1/M1A2Olive.edds"
     m_EntityBudgetCost {
      SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
       m_Value 5000

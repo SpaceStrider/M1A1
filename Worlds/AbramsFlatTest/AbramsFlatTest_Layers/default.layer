@@ -186,13 +186,21 @@ GenericEntity : "{A958A61D3FAEBC41}Prefabs/Vehicles/Tracked/M1A2/VehParts/ERA/M1
 Projectile : "{AA48031F6DAE2863}Prefabs/Weapons/Ammo/Ammo_APFSDS_M829A1_Spall.et" {
  coords 5.963 1 234.99
 }
-GenericEntity : "{AF385E5DFF5A5A6E}Prefabs/Weapons/Warheads/3D17/Warhead_Smoke_M1A1.et" {
+GenericEntity : "{AF385E5DFF5A5A6E}Prefabs/Weapons/Warheads/Smoke/Warhead_Smoke_US.et" {
  coords 55.282 1 235.318
 }
 GenericEntity : "{B21B803A22ED33F7}Prefabs/Vehicles/Tracked/M1A2/VehParts/M1A2_BasketExtention_MERDC.et" {
  coords 3.112 1 225.404
 }
 Tank M1A2 : "{B47B16E8DB493898}Prefabs/Vehicles/Tracked/M1A1/M1A1.et" {
+ components {
+  VehicleWheeledSimulation "{731B26FCA2F19855}" {
+   Simulation Wheeled "{5E38B84FCEFFD739}" {
+    Engine Engine Engine {
+    }
+   }
+  }
+ }
  coords 58.954 1 247.11
 }
 GenericEntity : "{B54F3CF1337D9B85}Prefabs/Vehicles/Tracked/M1A2/VehParts/ERA/M1A2_Turret_TuskSupports_Tan.et" {

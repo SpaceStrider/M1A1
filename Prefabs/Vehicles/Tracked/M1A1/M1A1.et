@@ -120,19 +120,19 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
      SteeringCenterSpeed +{
      }
      ThrottleCurve {
-      1000 0.8 2800 0.5 3000 0
+      2000 0.8 2500 0.5 3000 0
      }
      ReverseCurve {
-      1500 0.8 1800 0.5 2300 0
+      1500 0.8 2000 0.5 2500 0
      }
      ClutchUncoupleTime 0.01
      ClutchCoupleTime 0.01
-     ClutchUncoupleRpm 1100
-     ClutchCoupleRpm 1600
-     Latency 1
-     UpShiftFactor 0.7
+     ClutchUncoupleRpm 1050
+     ClutchCoupleRpm 1450
+     Latency 0.5
+     UpShiftFactor 0.3
      UpShiftRpm 1250
-     DownShiftFactor 0.65
+     DownShiftFactor 0.1
      DownShiftRpm 1050
      TurboShiftFactor 1
     }
@@ -246,10 +246,10 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
    m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
     Name "#Abrams-EditableEntity_M1A1_Name"
     Icon "{95F49CBE9FF7A0CB}UI/Textures/Editor/EditableEntities/Vehicles/EditableEntity_Vehicle_Apc.edds"
-    m_Image "{1DF41C644BC73B67}UI/Textures/EditorPreviews/Vehicles/Tracked/M1A1/Screenshot 2024-01-24 212317.edds"
+    m_Image "{D32C1C4DB161288A}UI/Textures/EditorPreviews/Vehicles/Tracked/M1A1/M1A1Olive.edds"
     m_sFaction "US"
     m_aAuthoredLabels + {
-     20 21 53
+     20 21 54
     }
     m_aAutoLabels {
      11 122
@@ -604,13 +604,13 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
      Inertia 1
      MaxPower 1120
      MaxTorque 3754
-     RpmMaxPower 3000
-     RpmMaxTorque 1000
-     Steepness 80
-     Friction 265
-     RpmIdle 900
-     RpmRedline 2800
-     RpmMax 3100
+     RpmMaxPower 2100
+     RpmMaxTorque 1450
+     Steepness 40
+     Friction 290
+     RpmIdle 600
+     RpmRedline 2500
+     RpmMax 3000
      Output "Clutch"
     }
     Clutch Clutch Clutch {
@@ -619,56 +619,56 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
     }
     Gearbox Gearbox Gearbox {
      Forward {
-      8 6 4 2 1
+      6 4 2 1
      }
      Reverse 6
      Output "Diff_A"
     }
     Differentials {
      Differential Diff_A {
-      Type Locked
-      Ratio 1
+      Type LSD
+      Ratio 14
       Strength 1
       Output0 "Diff_B"
       Output1 "Diff_C"
      }
      Differential Diff_B {
-      Type Locked
+      Type LSD
       Ratio 1
       Strength 1
       Output0 "Diff_01_03"
       Output1 "Diff_02_04"
      }
      Differential Diff_C {
-      Type Locked
+      Type LSD
       Ratio 1
       Strength 1
       Output0 "Diff_05_07"
       Output1 "Diff_06_08"
      }
      Differential Diff_01_03 {
-      Type Locked
+      Type LSD
       Ratio 1
       Strength 1
       Output0 "Diff_01"
       Output1 "Diff_03"
      }
      Differential Diff_02_04 {
-      Type Locked
+      Type LSD
       Ratio 1
       Strength 1
       Output0 "Diff_02"
       Output1 "Diff_04"
      }
      Differential Diff_05_07 {
-      Type Locked
+      Type LSD
       Ratio 1
       Strength 1
       Output0 "Diff_05"
       Output1 "Diff_07"
      }
      Differential Diff_06_08 {
-      Type Locked
+      Type LSD
       Ratio 1
       Strength 1
       Output0 "Diff_06"
@@ -677,10 +677,9 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
     }
     Axles {
      Axle "{5E38B84FCEFFD734}" {
-      TorqueShare 0.15
+      TorqueShare 0.142
       HasHandbrake 1
       Differential Differential Diff_01 {
-       Type LSD
        Ratio 6.8
        Strength 1
        Output0 "Wheel_L01"
@@ -691,7 +690,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
       Wheel Wheel "{5CB63E75C05DD829}" : "{BA0BD2CF170C28AC}Prefabs/Vehicles/Tracked/M1A1/Configs/AbramsWheel.conf" {
       }
-      Tyre Tyre "{5CB63E75C1D1AE9F}" : "{20E25B230F57D328}Configs/Vehicles/Tracked/TrackedTyres.conf" {
+      Tyre Tyre "{5CB63E75C1D1AE9F}" : "{D6D7AFEAECF18A52}Prefabs/Vehicles/Tracked/M1A1/Configs/VehicleSimulationTire_Abrams.conf" {
       }
       WheelPositions {
        WheelPosition Wheel_L01 {
@@ -703,10 +702,9 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
      }
      Axle "{5E38B84FCEFFD72B}" {
-      TorqueShare 0.15
+      TorqueShare 0.142
       HasHandbrake 1
       Differential Differential Diff_02 {
-       Type LSD
        Ratio 6.8
        Strength 1
        Output0 "Wheel_L02"
@@ -717,7 +715,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
       Wheel Wheel "{5CB63E75C3728451}" : "{BA0BD2CF170C28AC}Prefabs/Vehicles/Tracked/M1A1/Configs/AbramsWheel.conf" {
       }
-      Tyre Tyre "{5CB63E75CCA2638C}" : "{20E25B230F57D328}Configs/Vehicles/Tracked/TrackedTyres.conf" {
+      Tyre Tyre "{5CB63E75CCA2638C}" : "{D6D7AFEAECF18A52}Prefabs/Vehicles/Tracked/M1A1/Configs/VehicleSimulationTire_Abrams.conf" {
       }
       WheelPositions {
        WheelPosition Wheel_L02 {
@@ -729,10 +727,9 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
      }
      Axle "{5E38B84FCEFFD72D}" {
-      TorqueShare 0.15
+      TorqueShare 0.142
       HasHandbrake 1
       Differential Differential Diff_03 {
-       Type LSD
        Ratio 6.8
        Strength 1
        Output0 "Wheel_L03"
@@ -744,7 +741,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
       Wheel Wheel "{5CB63E75CEABD61F}" : "{BA0BD2CF170C28AC}Prefabs/Vehicles/Tracked/M1A1/Configs/AbramsWheel.conf" {
       }
-      Tyre Tyre "{5CB63E75C97DC023}" : "{20E25B230F57D328}Configs/Vehicles/Tracked/TrackedTyres.conf" {
+      Tyre Tyre "{5CB63E75C97DC023}" : "{D6D7AFEAECF18A52}Prefabs/Vehicles/Tracked/M1A1/Configs/VehicleSimulationTire_Abrams.conf" {
       }
       WheelPositions {
        WheelPosition Wheel_L03 {
@@ -756,10 +753,9 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
      }
      Axle "{5E38B84FCEFFD72E}" {
-      TorqueShare 0.15
+      TorqueShare 0.142
       HasHandbrake 1
       Differential Differential Diff_04 {
-       Type LSD
        Ratio 6.8
        Strength 1
        Output0 "Wheel_L04"
@@ -770,7 +766,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
       Wheel Wheel "{5CB63E75CB21F1B9}" : "{BA0BD2CF170C28AC}Prefabs/Vehicles/Tracked/M1A1/Configs/AbramsWheel.conf" {
       }
-      Tyre Tyre "{5CB63E75CBE6B18C}" : "{20E25B230F57D328}Configs/Vehicles/Tracked/TrackedTyres.conf" {
+      Tyre Tyre "{5CB63E75CBE6B18C}" : "{D6D7AFEAECF18A52}Prefabs/Vehicles/Tracked/M1A1/Configs/VehicleSimulationTire_Abrams.conf" {
       }
       WheelPositions {
        WheelPosition Wheel_L04 {
@@ -782,10 +778,9 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
      }
      Axle "{5E38B84FCEFFD720}" {
-      TorqueShare 0.15
+      TorqueShare 0.142
       HasHandbrake 1
       Differential Differential Diff_05 {
-       Type LSD
        Ratio 6.8
        Strength 1
        Output0 "Wheel_L05"
@@ -796,7 +791,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
       Wheel Wheel "{5CB63E75D5F89198}" : "{BA0BD2CF170C28AC}Prefabs/Vehicles/Tracked/M1A1/Configs/AbramsWheel.conf" {
       }
-      Tyre Tyre "{5CB63E75D69ADDFC}" : "{20E25B230F57D328}Configs/Vehicles/Tracked/TrackedTyres.conf" {
+      Tyre Tyre "{5CB63E75D69ADDFC}" : "{D6D7AFEAECF18A52}Prefabs/Vehicles/Tracked/M1A1/Configs/VehicleSimulationTire_Abrams.conf" {
       }
       WheelPositions {
        WheelPosition Wheel_L05 {
@@ -808,10 +803,9 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
      }
      Axle "{5E38B84FCEFFD721}" {
-      TorqueShare 0.15
+      TorqueShare 0.142
       HasHandbrake 1
       Differential Differential Diff_06 {
-       Type LSD
        Ratio 6.8
        Strength 1
        Output0 "Wheel_L06"
@@ -822,7 +816,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
       Wheel Wheel "{5CB63E75D071A4F0}" : "{BA0BD2CF170C28AC}Prefabs/Vehicles/Tracked/M1A1/Configs/AbramsWheel.conf" {
       }
-      Tyre Tyre "{5CB63E75D12E4D3B}" : "{20E25B230F57D328}Configs/Vehicles/Tracked/TrackedTyres.conf" {
+      Tyre Tyre "{5CB63E75D12E4D3B}" : "{D6D7AFEAECF18A52}Prefabs/Vehicles/Tracked/M1A1/Configs/VehicleSimulationTire_Abrams.conf" {
       }
       WheelPositions {
        WheelPosition Wheel_L06 {
@@ -834,10 +828,9 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
      }
      Axle "{5E38B84FCEFFD722}" {
-      TorqueShare 0.15
+      TorqueShare 0.142
       HasHandbrake 1
       Differential Differential Diff_07 {
-       Type LSD
        Ratio 6.8
        Strength 1
        Output0 "Wheel_L07"
@@ -849,7 +842,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
       Wheel Wheel "{5CB63E75D2E13AEA}" : "{BA0BD2CF170C28AC}Prefabs/Vehicles/Tracked/M1A1/Configs/AbramsWheel.conf" {
       }
-      Tyre Tyre "{5CB63E75D3856777}" : "{20E25B230F57D328}Configs/Vehicles/Tracked/TrackedTyres.conf" {
+      Tyre Tyre "{5CB63E75D3856777}" : "{D6D7AFEAECF18A52}Prefabs/Vehicles/Tracked/M1A1/Configs/VehicleSimulationTire_Abrams.conf" {
       }
       WheelPositions {
        WheelPosition Wheel_L07 {
@@ -861,9 +854,9 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
      }
      Axle "{5E38B84FCEFFD723}" {
-      TorqueShare 0.15
+      TorqueShare 0.142
+      HasHandbrake 1
       Differential Differential Diff_08 {
-       Type LSD
        Ratio 6.8
        Strength 1
        Output0 "Wheel_L08"
@@ -874,7 +867,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
       Wheel Wheel "{5CB63E75DCEE0AF8}" : "{BA0BD2CF170C28AC}Prefabs/Vehicles/Tracked/M1A1/Configs/AbramsWheel.conf" {
       }
-      Tyre Tyre "{5CB63E75DD9EE3FC}" : "{20E25B230F57D328}Configs/Vehicles/Tracked/TrackedTyres.conf" {
+      Tyre Tyre "{5CB63E75DD9EE3FC}" : "{D6D7AFEAECF18A52}Prefabs/Vehicles/Tracked/M1A1/Configs/VehicleSimulationTire_Abrams.conf" {
       }
       WheelPositions {
        WheelPosition Wheel_L08 {
@@ -886,9 +879,8 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
      }
      Axle "{5E38B84FCEFFD725}" {
-      TorqueShare 0.15
+      TorqueShare 0.142
       Differential Differential Diff_09 {
-       Type LSD
        Ratio 6.8
        Strength 1
        Output0 "Wheel_L09"
@@ -899,7 +891,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
       Wheel Wheel "{5D1880CEFBDEBB45}" : "{BA0BD2CF170C28AC}Prefabs/Vehicles/Tracked/M1A1/Configs/AbramsWheel.conf" {
       }
-      Tyre Tyre "{5D1880CF838466C0}" : "{20E25B230F57D328}Configs/Vehicles/Tracked/TrackedTyres.conf" {
+      Tyre Tyre "{5D1880CF838466C0}" : "{D6D7AFEAECF18A52}Prefabs/Vehicles/Tracked/M1A1/Configs/VehicleSimulationTire_Abrams.conf" {
       }
       WheelPositions {
        WheelPosition Wheel_L09 {
@@ -913,14 +905,14 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
     }
     InertiaOverride 90000 100000 29500
     Aerodynamics Aerodynamics "{5E38B84FCEFFD727}" {
-     ReferenceArea 10
+     ReferenceArea 12
     }
     Pacejka Pacejka "{5CEA0545F9051D49}" : "{2E1044D5BFA6FB16}Prefabs/Vehicles/Core/Configs/PacejkaTire_Truck_Offroad.conf" {
     }
     RaycastLayer "VehicleCast"
     LiquidsLayers "Liquids"
     NoiseSteerSensitivity 0.5
-    RoughnessSensitivity 0
+    RoughnessSensitivity 0.5
    }
   }
   BaseFlattenGrassComponent "{55FCDD8048D3AE17}" {
